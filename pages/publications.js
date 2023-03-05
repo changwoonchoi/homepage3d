@@ -1,7 +1,7 @@
-import { Container, Heading, SimpleGrid, Divider, Box } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem, PubGridItem, PubGridItem2 } from '../components/grid-item'
+import { PubGridItem, PubGridItem2 } from '../components/grid-item'
 
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'

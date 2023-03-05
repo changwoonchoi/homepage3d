@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
-import { FootprintIcon, IMacIcon} from './icons/footprint'
+import { IMacIcon} from './icons/footprint'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`

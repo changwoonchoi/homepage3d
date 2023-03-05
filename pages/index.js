@@ -4,14 +4,14 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
+  // SimpleGrid,
   Button,
   List,
   ListItem,
-  useColorModeValue,
+  // useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -66,12 +66,12 @@ const Home = () => (
           About me 
         </Heading>
         <Paragraph>
-          I'm Ph.D. student at Seoul National University, majoring in Electrical and Computer Engineering, advised by Prof.{' '}
+          I&apos;m Ph.D. student at Seoul National University, majoring in Electrical and Computer Engineering, advised by Prof.{' '}
           <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false}>
             Young Min Kim
           </Link>
           .
-          I received my Bacheler's degree also in Electrical and Computer Engineering from Seoul National University.
+          I received my Bacheler&apos;s degree also in Electrical and Computer Engineering from Seoul National University.
           My current research interest is in the field of computer vision and graphics with neural implicit representations including NeRF.
         </Paragraph>
         <Box align="center" my={4}>

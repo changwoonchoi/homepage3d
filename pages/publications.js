@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid, Divider, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem, PubGridItem } from '../components/grid-item'
+import { WorkGridItem, PubGridItem, PubGridItem2 } from '../components/grid-item'
 
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
@@ -15,7 +15,13 @@ const Publications = () => (
         Publications
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={{sm:1}} gap={6}>
+        <Section>
+          <PubGridItem2 id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+            A Markdown note-taking app with 100+ plugins, cross-platform and
+            encrypted data sync support
+          </PubGridItem2>
+        </Section>
         <Section>
           <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
             A Markdown note-taking app with 100+ plugins, cross-platform and

@@ -20,15 +20,9 @@ const Main = ({ children, router }) => {
         <meta name="author" content="craftzdog" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Changwoon Choi" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
         <meta property="og:site_name" content="Changwoon Choi" />
-        <meta name="og:title" content="Changwoon iChoi" />
+        <meta name="og:title" content="Changwoon Choi" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
         <title>Changwoon Choi</title>
       </Head>
 

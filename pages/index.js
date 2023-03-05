@@ -27,7 +27,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box display={{ md: 'flex' }}>
+      <Box display={{ lg: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Changwoon Choi 

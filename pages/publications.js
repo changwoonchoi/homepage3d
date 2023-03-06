@@ -1,12 +1,10 @@
 import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { PubGridItem, PubGridItem2 } from '../components/grid-item'
+import { PubGridItem } from '../components/grid-item'
 
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
+import thumbGCA from '../public/images/publications/gca.gif'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -17,10 +15,15 @@ const Publications = () => (
 
       <SimpleGrid columns={{sm:1}} gap={6}>
         <Section>
-          <PubGridItem2 id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
-          </PubGridItem2>
+          <PubGridItem
+            id="GCA"
+            title="Learning to Generate 3D shapes with Generative Cellular Automata"
+            thumbnail={thumbGCA}
+          >
+            International Conference on Learning Representations (ICLR), 2021<br/>
+            Dongsu Zhang, Changwoon Choi, Jeonghwan Kim, Young Min Kim<br/>
+            project page / paper / code
+          </PubGridItem>
         </Section>
         <Section>
           <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
@@ -29,29 +32,27 @@ const Publications = () => (
           </PubGridItem>
         </Section>
         <Section>
-          <PubGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
+          <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+            A Markdown note-taking app with 100+ plugins, cross-platform and
+            encrypted data sync support
           </PubGridItem>
         </Section>
-
-        <Section delay={0.1}>
-          <PubGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+        <Section>
+          <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+            A Markdown note-taking app with 100+ plugins, cross-platform and
+            encrypted data sync support
           </PubGridItem>
         </Section>
-        <Section delay={0.1}>
-          <PubGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+        <Section>
+          <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+            A Markdown note-taking app with 100+ plugins, cross-platform and
+            encrypted data sync support
+          </PubGridItem>
+        </Section>
+        <Section delay={0.2}>
+          <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+            A Markdown note-taking app with 100+ plugins, cross-platform and
+            encrypted data sync support
           </PubGridItem>
         </Section>
       </SimpleGrid>

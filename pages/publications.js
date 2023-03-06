@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { PubGridItem } from '../components/grid-item'
+import { PubGridItem, PubGridItemAnim } from '../components/grid-item'
 
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import thumbGCA from '../public/images/publications/gca.gif'
@@ -15,15 +15,15 @@ const Publications = () => (
 
       <SimpleGrid columns={{sm:1}} gap={6}>
         <Section>
-          <PubGridItem
+          <PubGridItemAnim
             id="GCA"
             title="Learning to Generate 3D shapes with Generative Cellular Automata"
             thumbnail={thumbGCA}
+            journal="International Conference on Learning Representations (ICLR), 2021"
+            author="Dongsu Zhang, Changwoon Choi, Jeonghwan Kim, Young Min Kim"
           >
-            International Conference on Learning Representations (ICLR), 2021<br/>
-            Dongsu Zhang, Changwoon Choi, Jeonghwan Kim, Young Min Kim<br/>
             project page / paper / code
-          </PubGridItem>
+          </PubGridItemAnim>
         </Section>
         <Section>
           <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>

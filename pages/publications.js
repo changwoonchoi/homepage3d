@@ -19,7 +19,7 @@ const Publications = () => (
 
       <SimpleGrid columns={{sm:1}} gap={6}>
         <Section>
-          <PubGridItem
+          <PubGridItemLink
             id="EgoNeRF"
             title="Balanced Spherical Grid for Egocentric View Synthesis"
             thumbnail={thumbEgoNeRF}
@@ -30,12 +30,12 @@ const Publications = () => (
             video="none"
             code="none"
           >
-          </PubGridItem>
+          </PubGridItemLink>
         </Section>
 
         <Section>
           <PubGridItem
-            id="IBL-NeRF"
+            // id="IBL-NeRF"
             title="IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields"
             thumbnail={thumbIBLNeRF}
             journal="arXiv preprint"
@@ -50,7 +50,7 @@ const Publications = () => (
 
         <Section>
           <PubGridItem
-            id="CPO"
+            // id="CPO"
             title="CPO: Change Robust Panorama to Point Cloud Localization"
             thumbnail={thumbCPO}
             journal="European Conference on Computer Vision (ECCV), 2022"
@@ -66,7 +66,7 @@ const Publications = () => (
 
         <Section>
           <PubGridItem
-            id="cGCA"
+            // id="cGCA"
             title="Probabilistic Implicit Scene Completion"
             thumbnail={thumbcGCA}
             journal="International Conference on Learning Representations (ICLR), 2022"
@@ -82,7 +82,7 @@ const Publications = () => (
 
         <Section>
           <PubGridItem
-            id="PICCOLO"
+            // id="PICCOLO"
             title="PICCOLO: Point Cloud-Centric Omnidirectional Localization"
             thumbnail={thumbPICCOLO}
             journal="International Conference on Computer Vision (ICCV), 2021"

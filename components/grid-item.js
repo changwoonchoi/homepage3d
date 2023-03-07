@@ -103,7 +103,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
 //   </SimpleGrid>
 // )
 
-export const PubGridItem = ({ children, id, title, thumbnail, journal, author, project_page, paper, video, code }) => (
+export const PubGridItem = ({ title, thumbnail, journal, author, project_page, paper, video, code }) => (
   <SimpleGrid columns={{sm: 1, md: 4}} gap={4}>
     <Box w={{sm:"100%", md: "100%"}} textAlign="center">
       <Image
@@ -130,7 +130,7 @@ export const PubGridItem = ({ children, id, title, thumbnail, journal, author, p
   </SimpleGrid>
 )
 
-export const PubGridItemLink = ({ children, id, title, thumbnail, journal, author, project_page, paper, video, code }) => (
+export const PubGridItemLink = ({ id, title, thumbnail, journal, author, project_page, paper, video, code }) => (
   <SimpleGrid columns={{sm: 1, md: 4}} gap={4}>
     <Box w={{sm:"100%", md: "100%"}} textAlign="center">
       <Image

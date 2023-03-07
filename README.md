@@ -1,12 +1,9 @@
-# Takuya's Homepage
+# Personal Homepage
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
+[https://changwoon.info](https://changwoon.info)
 
-## Tutorial
 
-Watch how I built this website on YouTube:
-
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
+[![YouTube thumbnail](./doc/thumb.png)](https://changwoon.info)
 
 ## Stack
 
@@ -35,10 +32,14 @@ MIT License.
 
 You can create your own homepage for free without notifying me by forking this project under the following conditions:
 
-- Add a link to [my homepage](https://www.craftz.dog/)
-- Do not use the 3d voxel dog
+- Add a link to [my homepage](https://changwoon.info/)
+- Do not use the 3D model
 
 Check out [LICENSE](./LICENSE) for more detail.
+
+## Acknowledgement
+This website is built based on the [Takuya's website](https://www.craftz.dog/).
+Highly appreciate for his great work!
 
 ---
 

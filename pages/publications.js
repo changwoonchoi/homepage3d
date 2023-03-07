@@ -43,12 +43,6 @@ const Publications = () => (
             encrypted data sync support
           </PubGridItem>
         </Section>
-        <Section>
-          <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
-          </PubGridItem>
-        </Section>
         <Section delay={0.2}>
           <PubGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
             A Markdown note-taking app with 100+ plugins, cross-platform and

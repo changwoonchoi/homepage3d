@@ -63,12 +63,19 @@ export const PubGridItem = ({ children, id, title, thumbnail }) => (
       </LinkBox>
     </Box>
     <Box w={{sm: "100%", md: "200%"}} textAlign="left">
-      <LinkOverlay as="div" href={`/publications/${id}`}>
-        <Text mt={2} fontSize={20}>
-          {title}
-        </Text>
-      </LinkOverlay>
+      <LinkBox
+        as={NextLink}
+        href={`/publications/${id}`}
+        scroll={false}
+        cursor="pointer"
+      >
+        <LinkOverlay as="div" href={`/publications/${id}`}>
+          <Text mt={2} fontSize={20}>
+            {title}
+          </Text>
+        </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
+      </LinkBox>
     </Box>
   </SimpleGrid>
 )
@@ -91,18 +98,25 @@ export const PubGridItemAnim = ({ children, id, title, thumbnail, journal, autho
       </LinkBox>
     </Box>
     <Box w={{sm: "100%", md: "200%"}} textAlign="left">
-      <LinkOverlay as="div" href={`/publications/${id}`}>
-        <Text mt={2} fontSize={20}>
-          {title}
-        </Text>
-      </LinkOverlay>
-        <Text fontSize={14}>
-          {author}
-        </Text>
-        <Text fontSize={14} color="grey" fontStyle="italic">
-          {journal}
-        </Text>
-      <Text fontSize={14}>{children}</Text>
+      <LinkBox
+        as={NextLink}
+        href={`/publications/${id}`}
+        scroll={false}
+        cursor="pointer"
+      >
+        <LinkOverlay as="div" href={`/publications/${id}`}>
+          <Text mt={2} fontSize={20}>
+            {title}
+          </Text>
+        </LinkOverlay>
+          <Text fontSize={14}>
+            {author}
+          </Text>
+          <Text fontSize={14} color="grey" fontStyle="italic">
+            {journal}
+          </Text>
+        <Text fontSize={14}>{children}</Text>
+      </LinkBox>
     </Box>
   </SimpleGrid>
 )

@@ -34,8 +34,8 @@ const Publications = () => (
         </Section>
 
         <Section>
-          <PubGridItem
-            // id="IBL-NeRF"
+          <PubGridItemLink
+            id="IBL-NeRF"
             title="IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields"
             thumbnail={thumbIBLNeRF}
             journal="arXiv preprint"
@@ -45,7 +45,7 @@ const Publications = () => (
             video="none"
             code="https://github.com/changwoonchoi/IBL-NeRF"
           >
-          </PubGridItem>
+          </PubGridItemLink>
         </Section>
 
         <Section>
@@ -97,7 +97,7 @@ const Publications = () => (
         </Section>
 
         <Section>
-          <PubGridItemLink
+          <PubGridItem
             id="GCA"
             title="Learning to Generate 3D shapes with Generative Cellular Automata"
             thumbnail={thumbGCA}
@@ -109,7 +109,7 @@ const Publications = () => (
             code="https://github.com/96lives/gca"
           >
             We present a Markov chain based 3D generative model named Generative Cellular Automata, which is scalable for producing high-resolution voxels.
-          </PubGridItemLink>
+          </PubGridItem>
         </Section>
       </SimpleGrid>
 

@@ -11,6 +11,7 @@
 - [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
 - [Three.js](https://threejs.org/) - 3D library for JavaScript
 - [Framer Motion](https://www.framer.com/motion/) - An animation library for React
+- [Vercel](https://vercel.com/) - Cloud platform to host website
 
 ## Project structure
 
@@ -40,9 +41,3 @@ Check out [LICENSE](./LICENSE) for more detail.
 ## Acknowledgement
 This website is built based on the [Takuya's website](https://www.craftz.dog/).
 Highly appreciate for his great work!
-
----
-
-Looking for a Markdown note-taking app? Check out my app called Inkdrop:
-
-[![Inkdrop](https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png)](https://www.inkdrop.app/)

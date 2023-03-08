@@ -9,6 +9,7 @@ const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
   ssr: false,
   loading: () => <VoxelDogLoader />
 })
+// insert <LazyVoxelDog /> before children when you prepare 3D model.
 
 const Main = ({ children, router }) => {
   return (
@@ -28,7 +29,9 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="95ch" pt={14}>
-        <LazyVoxelDog />
+
+      <Box align="center" h="5em">
+      </Box>
 
         {children}
 

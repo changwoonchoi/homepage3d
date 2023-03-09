@@ -22,7 +22,7 @@ import {
         <Text textAlign="right" fontStyle="italic">
           - Changwoon Choi, Juhyeon Kim, Young Min Kim
         </Text>
-        <WorkImage src="/images/publications/ibl-nerf_teaser.png" alt="IBL-NeRF_teaser" />
+        <WorkImage src="/images/publications/ibl-nerf_teaser.jpg" alt="IBL-NeRF_teaser" />
         <Heading as="h3" variant="section-title">
           Abstract
         </Heading>

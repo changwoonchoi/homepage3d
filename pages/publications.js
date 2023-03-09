@@ -5,10 +5,10 @@ import { PubGridItem, PubGridItemLink } from '../components/grid-item'
 
 import thumbGCA from '../public/images/publications/gca.gif'
 import thumbcGCA from '../public/images/publications/cgca.gif'
-import thumbPICCOLO from '../public/images/publications/piccolo.png'
-import thumbCPO from '../public/images/publications/cpo.png'
+import thumbPICCOLO from '../public/images/publications/piccolo.jpg'
+import thumbCPO from '../public/images/publications/cpo.jpg'
 import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
-import thumbEgoNeRF from '../public/images/publications/egonerf.png'
+import thumbEgoNeRF from '../public/images/publications/egonerf.jpg'
 
 const Publications = () => (
   <Layout title="Publications">

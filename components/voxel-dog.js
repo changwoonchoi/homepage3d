@@ -14,7 +14,7 @@ const VoxelDog = () => {
   const refRenderer = useRef()
   // const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
   // const urlDogGLB = '/dog.glb'
-  const urlDogGLB = '/scene_2.glb'
+  const urlDogGLB = '/scene_2_bake.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer

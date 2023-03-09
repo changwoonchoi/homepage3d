@@ -42,7 +42,7 @@ import {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Keywords</Meta>
-            <span>NeRF, Egocentric video, Large scale</span>
+            <span>NeRF, Egocentric video, Large-scale</span>
           </ListItem>
           <ListItem>
             <Meta>Paper</Meta>
@@ -53,14 +53,14 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Dataset</Meta>
-            <Link>
+            <Link href="https://drive.google.com/drive/folders/1kqLAATjSSDwfLHI5O7RTfM9NOUi7PvcK?usp=sharing" target="_blank">
               Google Drive Link
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Code</Meta>
-            <Link>
+            <Link href="https://github.com/changwoonchoi/EgoNeRF" target="_blank">
               GitHub Link
               <ExternalLinkIcon mx="2px" />
             </Link>

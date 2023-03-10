@@ -22,7 +22,7 @@ import {
         <Text textAlign="right" fontStyle="italic">
           - Changwoon Choi, Sang Min Kim, Young Min Kim
         </Text>
-        <WorkImage src="/images/publications/egonerf_teaser.png" alt="EgoNeRF_teaser" />
+        <WorkImage src="/images/publications/egonerf_teaser.jpg" alt="EgoNeRF_teaser" />
         <Heading as="h3" variant="section-title">
           Abstract
         </Heading>

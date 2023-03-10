@@ -8,7 +8,6 @@ import {
   Button,
   List,
   ListItem,
-  // useColorModeValue,
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -27,6 +26,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
+
       <Box display={{ lg: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">

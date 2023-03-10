@@ -1,15 +1,14 @@
 import Head from 'next/head'
-// import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-// import VoxelDogLoader from '../voxel-dog-loader'
+import SceneLoader from '../load_scene'
 
-// const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-//   ssr: false,
-//   loading: () => <VoxelDogLoader />
-// })
-// insert <LazyVoxelDog /> before children when you prepare 3D model.
+const Scene = dynamic(() => import('../scene'), {
+  ssr: false,
+  loading: () => <SceneLoader />
+})
 
 const Main = ({ children, router }) => {
   return (
@@ -29,6 +28,7 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="95ch" pt={14}>
+      <Scene />
 
       <Box align="center" h="5em">
       </Box>

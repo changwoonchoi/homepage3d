@@ -6,7 +6,8 @@ import {
     List,
     ListItem,
     Box,
-    Text
+    Text,
+    SimpleGrid
   } from '@chakra-ui/react'
   import Layout from '../../components/layouts/article'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -19,13 +20,41 @@ import {
         <Title>
           Balanced Spherical Grid for Egocentric View Synthesis <Badge>CVPR 2023</Badge>
         </Title>
-        <Text textAlign="right" fontStyle="italic">
-          - Changwoon Choi, Sang Min Kim, Young Min Kim
-        </Text>
-        <WorkImage src="/images/publications/egonerf_teaser.jpg" alt="EgoNeRF_teaser" />
+        <SimpleGrid columns={3} gap={6}>
+          <Box w="100%" textAlign="center">
+            <Link href="https://changwoon.info" target="_blank">
+              <Text fontSize="14" fontWeight="800">Changwoon Choi</Text>
+            </Link>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Text fontSize="14" fontWeight="800">Sang Min Kim</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Link href="https://3d.snu.ac.kr/" target="_blank">
+              <Text fontSize="14" fontWeight="800">Young Min Kim</Text>
+            </Link>
+          </Box>
+        </SimpleGrid>
+
+        <SimpleGrid columns={3} gap={6}>
+          <Box w="100%" textAlign="center">
+            <Text fontSize="12">Seoul National University</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Text fontSize="12">Seoul National University</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Text fontSize="12">Seoul National University</Text>
+          </Box>
+        </SimpleGrid>
+
+        <Box align="center" h="1em">
+        </Box>
+
         <Heading as="h3" variant="section-title">
           Abstract
         </Heading>
+        <WorkImage src="/images/publications/egonerf_teaser.jpg" alt="EgoNeRF_teaser" />
         <P>
           We present EgoNeRF, a practical solution to reconstruct large-scale real-world environments for VR assets.
           Given a few seconds of casually captured 360 video, EgoNeRF can efficiently build neural radiance fields.

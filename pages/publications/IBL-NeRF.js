@@ -94,7 +94,7 @@ import {
         <Box bg="rgba(0.9, 0.9, 0.9, 0.1)" borderRadius="lg" padding={3} overflowX="scroll">
           <Text fontSize={12}>
             <pre>
-            @article&#123;choi2022ibl,<br/>  author  =Choi, Changwoon and Kim, Juhyeon and Kim, Young Min&#125;,<br/>  title   =IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields,<br/>  journal =arXiv preprint arXiv:2210.08202<br/>  month   =June,<br/>  year    =2022,<br/>&#125; 
+            @article&#123;choi2022ibl,<br/>  title=&#123;IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields&#125;,<br/>  author=&#123;Choi, Changwoon and Kim, Juhyeon and Kim, Young Min&#125;,<br/>  journal=&#123;arXiv preprint arXiv:2210.08202&#125;,<br/>  year=&#123;2022&#125;<br/>&#125; 
             </pre>
           </Text>
         </Box>

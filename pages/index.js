@@ -30,7 +30,7 @@ const Home = () => (
       <Box display={{ lg: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Changwoon Choi 
+            Changwoon Choi
           </Heading>
           <p><b>Ph.D. Student</b> <br/>3D Computer Vision, Neural Rendering</p>
         </Box>
@@ -63,7 +63,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          About me 
+          About me
         </Heading>
         <Paragraph>
           I&apos;m Ph.D. student at Seoul National University, majoring in Electrical and Computer Engineering, advised by Prof.{' '}
@@ -170,7 +170,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>Conference Reviewer</BioYear>
-          CVPR, ICCV, ECCV, 3DV
+          CVPR, ICCV, ECCV, 3DV, NeurIPS
         </BioSection>
       </Section>
 

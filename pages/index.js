@@ -170,7 +170,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>Conference Reviewer</BioYear>
-          CVPR, ICCV, ECCV, 3DV, NeurIPS
+          ECCV, 3DV (2022), CVPR, ICCV, NeurIPS (2023)
         </BioSection>
       </Section>
 

@@ -75,7 +75,7 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Paper</Meta>
-            <Link href="https://arxiv.org/abs/2303.12408">
+            <Link href="https://arxiv.org/abs/2303.12408" target="_blank">
               PDF Link
               <ExternalLinkIcon mx="2px" />
             </Link>

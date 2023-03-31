@@ -12,7 +12,7 @@ import {
   import Layout from '../../components/layouts/article'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
-  import P from '../../components/paragraph'
+  // import P from '../../components/paragraph'
   import 'katex/dist/katex.min.css'
   import Latex from 'react-latex-next'
 

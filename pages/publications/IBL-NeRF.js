@@ -13,8 +13,11 @@ import {
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
+  import 'katex/dist/katex.min.css'
+  import Latex from 'react-latex-next'
 
   const Publication = () => (
+
     <Layout title="IBL-NeRF">
       <Container>
         <Title>

@@ -14,6 +14,8 @@ const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034797123756399"
+     crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Changwoon's homepage" />
         <meta name="author" content="Changwoon Choi" />

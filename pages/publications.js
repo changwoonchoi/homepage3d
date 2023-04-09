@@ -26,9 +26,9 @@ const Publications = () => (
             journal="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023"
             author="Changwoon Choi, Sang Min Kim, Young Min Kim"
             project_page="none"
-            paper="none"
+            paper="https://arxiv.org/abs/2303.12408"
             video="none"
-            code="none"
+            code="https://github.com/changwoonchoi/EgoNeRF"
           >
           </PubGridItemLink>
         </Section>

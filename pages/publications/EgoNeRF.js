@@ -13,7 +13,7 @@ import {
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
-  
+
   const Publication = () => (
     <Layout title="EgoNeRF">
       <Container>
@@ -63,11 +63,11 @@ import {
           The spherical parameterization better aligns with the rays of egocentric images, and yet enables factorization for performance enhancement.
           However, the naïve spherical grid suffers from singularities at two poles, and also cannot represent unbounded scenes.
           To avoid singularities near poles, we combine two balanced grids, which results in a quasi-uniform angular grid.
-          We also partition the radial grid exponentially and place an environment map at infinity to represent unbounded scenes. 
+          We also partition the radial grid exponentially and place an environment map at infinity to represent unbounded scenes.
           Furthermore, with our resampling technique for grid-based methods, we can increase the number of valid samples to train NeRF volume.
           We extensively evaluate our method in our newly introduced synthetic and real-world egocentric 360 video datasets, and it consistently achieves state-of-the-art performance.
         </P>
-  
+
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Keywords</Meta>
@@ -97,12 +97,12 @@ import {
           <ListItem>
             <Meta>Video</Meta>
             <Link>
-              Video Link{' '}
+              Video Link{'https://www.youtube.com/watch?v=D-lsBhVP8zw'}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-  
+
 
         <Heading as="h3" variant="section-title">
           Citation
@@ -110,7 +110,7 @@ import {
         <Box bg="rgba(0.9, 0.9, 0.9, 0.1)" borderRadius="lg" padding={3} overflowX="scroll">
           <Text fontSize={12}>
             <pre>
-            @inproceedings&#123;choi2023CVPR,<br/>  author  =Changwoon Choi and Sang Min Kim and Young Min Kim&#125;,<br/>  title   =Balanced Spherical Grid for Egocentric View Synthesis,<br/>  booktitle =Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)<br/>  month   =June,<br/>  year    =2023,<br/>  pages   =TBD,<br/>&#125; 
+            @inproceedings&#123;choi2023CVPR,<br/>  author  =Changwoon Choi and Sang Min Kim and Young Min Kim&#125;,<br/>  title   =Balanced Spherical Grid for Egocentric View Synthesis,<br/>  booktitle =Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)<br/>  month   =June,<br/>  year    =2023,<br/>  pages   =TBD,<br/>&#125;
             </pre>
           </Text>
         </Box>
@@ -120,7 +120,7 @@ import {
       </Container>
     </Layout>
   )
-  
+
   export default Publication
   export { getServerSideProps } from '../../components/chakra'
-  
+

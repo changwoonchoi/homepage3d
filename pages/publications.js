@@ -27,7 +27,7 @@ const Publications = () => (
             author="Changwoon Choi, Sang Min Kim, Young Min Kim"
             project_page="none"
             paper="https://arxiv.org/abs/2303.12408"
-            video="none"
+            video="https://www.youtube.com/watch?v=D-lsBhVP8zw"
             code="https://github.com/changwoonchoi/EgoNeRF"
           >
           </PubGridItemLink>
@@ -72,7 +72,7 @@ const Publications = () => (
             journal="International Conference on Learning Representations (ICLR), 2022"
             author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
             project_page="none"
-            paper="https://openreview.net/forum?id=BnQhMqDfcKG" 
+            paper="https://openreview.net/forum?id=BnQhMqDfcKG"
             video="none"
             code="https://github.com/96lives/gca"
           >
@@ -119,5 +119,5 @@ const Publications = () => (
   </Layout>
 )
 
-export default Publications 
+export default Publications
 export { getServerSideProps } from '../components/chakra'

@@ -110,7 +110,7 @@ import {
         <Box bg="rgba(0.9, 0.9, 0.9, 0.1)" borderRadius="lg" padding={3} overflowX="scroll">
           <Text fontSize={12}>
             <pre>
-            @inproceedings&#123;choi2023CVPR,<br/>  author  =Changwoon Choi and Sang Min Kim and Young Min Kim&#125;,<br/>  title   =Balanced Spherical Grid for Egocentric View Synthesis,<br/>  booktitle =Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)<br/>  month   =June,<br/>  year    =2023,<br/>  pages   =TBD,<br/>&#125;
+            @inproceedings&#123;Choi_2023_CVPR,<br/>  author  = &#123;Choi, Changwoon and Kim, Sang Min and Kim, Young Min&#125;,<br/>  title   = &#123;Balanced Spherical Grid for Egocentric View Synthesis&#125,<br/>  booktitle = &#123;Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)&#125<br/>  month   = &#123;June&#125,<br/>  year    = &#123;2023&#125,<br/>  pages   = &#123;16590-16599&#125<br/>&#125;
             </pre>
           </Text>
         </Box>

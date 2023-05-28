@@ -96,7 +96,7 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Video</Meta>
-            <Link href="https://www.youtube.com/watch?v=D-lsBhVP8zw">
+            <Link href="https://www.youtube.com/watch?v=D-lsBhVP8zw" target="_blank">
               Video Link
               <ExternalLinkIcon mx="2px" />
             </Link>

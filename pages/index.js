@@ -169,6 +169,10 @@ const Home = () => (
           ROK Air Force (Operations Command)
         </BioSection>
         <BioSection>
+          <BioYear>2023.05 -</BioYear>
+          Visiting Graduate Student, University of California, San Diego, advised by Hao Su
+        </BioSection>
+        <BioSection>
           <BioYear>Conference Reviewer</BioYear>
           ECCV, 3DV (2022), CVPR, ICCV, NeurIPS (2023)
         </BioSection>

@@ -123,7 +123,7 @@ import {
           Dataset Overview
         </Heading>
         <P>
-          EgoNeRF takes a casual &quotEgocentric Video&quot as input.
+          EgoNeRF takes a casual &quot;Egocentric Video&quot; as input.
           We demonstrate some samples from our synthetic OmniBlender dataset and real-world Ricoh360 dataset.
           By simply rotating the camera attached to the stick, we can capture a large environment around the viewer.
           These videos are low-resolution version of our original dataset.

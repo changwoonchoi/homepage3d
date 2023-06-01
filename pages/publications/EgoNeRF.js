@@ -8,7 +8,8 @@ import {
     Box,
     Text,
     SimpleGrid,
-    AspectRatio
+    AspectRatio,
+    Image
   } from '@chakra-ui/react'
   import Layout from '../../components/layouts/article'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -171,6 +172,8 @@ import {
         <Heading as="h3" variant="section-title">
           Qualitative Results
         </Heading>
+        <Box align="center" h="0.3em">
+        </Box>
         <Heading as="h4" variant="section-subtitle">
           Free-view Rendered Video
         </Heading>
@@ -182,10 +185,120 @@ import {
         <video width="100%" controls="controls">
           <source src="/images/publications/bistro_bike_splitline_white.webm" type="video/webm" />
         </video>
+
+        <Box align="center" h="1em">
+        </Box>
+
         <Heading as="h4" variant="section-subtitle">
           Comparison with Baselines
         </Heading>
+        - Bistro Bike scene  in OmniBlender dataset
+        <SimpleGrid columns={{sm: 1, md: 3}} gap={2}>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bistro_bike_gt.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">Ground Truth</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bistro_bike_mipnerf360.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">Mip-NeRF 360</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bistro_bike_NeRF.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">NeRF</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bistro_bike_DVGO.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">DVGO</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bistro_bike_TensoRF.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">TensoRF</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bistro_bike_EgoNeRF.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">EgoNeRF (Ours)</Text>
+          </Box>
+        </SimpleGrid>
 
+
+        - Bricks scene in Ricoh360 dataset
+        <SimpleGrid columns={{sm: 1, md: 3}} gap={2}>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bricks_gt.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">Ground Truth</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bricks_mipnerf360.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">Mip-NeRF 360</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bricks_NeRF.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">NeRF</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bricks_DVGO.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">DVGO</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bricks_TensoRF.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">TensoRF</Text>
+          </Box>
+          <Box w="100%" textAlign="center">
+            <Image
+              width="100%"
+              src="/images/publications/bricks_EgoNeRF.png"
+              className="magnifier"
+            />
+            <Text fontSize="sm">EgoNeRF (Ours)</Text>
+          </Box>
+        </SimpleGrid>
+
+        <Box align="center" h="1em">
+        </Box>
         <Heading as="h3" variant="section-title">
           Citation
         </Heading>

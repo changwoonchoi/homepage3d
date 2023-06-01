@@ -11,10 +11,91 @@ import {
     AspectRatio,
     Image
   } from '@chakra-ui/react'
-  import Layout from '../../components/layouts/article'
-  import { ExternalLinkIcon } from '@chakra-ui/icons'
-  import { Title, WorkImage, Meta } from '../../components/work'
-  import P from '../../components/paragraph'
+import Layout from '../../components/layouts/article'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Title, WorkImage, Meta } from '../../components/work'
+import P from '../../components/paragraph'
+
+import { useEffect, useRef, useState } from "react";
+
+function ImageMagnifier({
+  src,
+  width,
+  height,
+  magnifierHeight = 100,
+  magnifieWidth = 100,
+  zoomLevel = 8.0
+}) {
+  const [[x, y], setXY] = useState([0, 0]);
+  const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
+  const [showMagnifier, setShowMagnifier] = useState(false);
+  return (
+    <div
+      style={{
+        position: "relative",
+        height: height,
+        width: width
+      }}
+    >
+      <img
+        src={src}
+        style={{ height: height, width: width }}
+        onMouseEnter={(e) => {
+          // update image size and turn-on magnifier
+          const elem = e.currentTarget;
+          const { width, height } = elem.getBoundingClientRect();
+          setSize([width, height]);
+          setShowMagnifier(true);
+        }}
+        onMouseMove={(e) => {
+          // update cursor position
+          const elem = e.currentTarget;
+          const { top, left } = elem.getBoundingClientRect();
+
+          // calculate cursor position on the image
+          const x = e.pageX - left - window.pageXOffset;
+          const y = e.pageY - top - window.pageYOffset;
+          setXY([x, y]);
+        }}
+        onMouseLeave={() => {
+          // close magnifier
+          setShowMagnifier(false);
+        }}
+        alt={"img"}
+      />
+
+      <div
+        style={{
+          display: showMagnifier ? "" : "none",
+          position: "absolute",
+
+          // prevent maginier blocks the mousemove event of img
+          pointerEvents: "none",
+          // set size of magnifier
+          height: `${magnifierHeight}px`,
+          width: `${magnifieWidth}px`,
+          // move element center to cursor pos
+          top: `${y - magnifierHeight / 2}px`,
+          left: `${x - magnifieWidth / 2}px`,
+          opacity: "1", // reduce opacity so you can verify position
+          border: "1px solid lightgray",
+          backgroundColor: "white",
+          backgroundImage: `url('${src}')`,
+          backgroundRepeat: "no-repeat",
+
+          //calculate zoomed image size
+          backgroundSize: `${imgWidth * zoomLevel}px ${
+            imgHeight * zoomLevel
+          }px`,
+
+          //calculete position of zoomed image.
+          backgroundPositionX: `${-x * zoomLevel + magnifieWidth / 2}px`,
+          backgroundPositionY: `${-y * zoomLevel + magnifierHeight / 2}px`
+        }}
+      ></div>
+    </div>
+  );
+}
 
   const Publication = () => (
     <Layout title="EgoNeRF">
@@ -190,105 +271,96 @@ import {
         </Box>
 
         <Heading as="h4" variant="section-subtitle">
-          Comparison with Baselines
+          Comparison with Baselines (Hover your mouse over the photo to zoom in!)
         </Heading>
         - Bistro Bike scene  in OmniBlender dataset
         <SimpleGrid columns={{sm: 1, md: 3}} gap={2}>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bistro_bike_gt.png"
-              className="magnifier"
             />
             <Text fontSize="sm">Ground Truth</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bistro_bike_mipnerf360.png"
-              className="magnifier"
             />
             <Text fontSize="sm">Mip-NeRF 360</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bistro_bike_NeRF.png"
-              className="magnifier"
             />
             <Text fontSize="sm">NeRF</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bistro_bike_DVGO.png"
-              className="magnifier"
             />
             <Text fontSize="sm">DVGO</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bistro_bike_TensoRF.png"
-              className="magnifier"
             />
             <Text fontSize="sm">TensoRF</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bistro_bike_EgoNeRF.png"
-              className="magnifier"
             />
             <Text fontSize="sm">EgoNeRF (Ours)</Text>
           </Box>
         </SimpleGrid>
 
+        <Box align="center" h="1em">
+        </Box>
 
         - Bricks scene in Ricoh360 dataset
         <SimpleGrid columns={{sm: 1, md: 3}} gap={2}>
           <Box w="100%" textAlign="center">
-            <Image
-              width="100%"
+            <ImageMagnifier
+              width={"100%"}
               src="/images/publications/bricks_gt.png"
-              className="magnifier"
             />
             <Text fontSize="sm">Ground Truth</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bricks_mipnerf360.png"
-              className="magnifier"
             />
             <Text fontSize="sm">Mip-NeRF 360</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bricks_NeRF.png"
-              className="magnifier"
             />
             <Text fontSize="sm">NeRF</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bricks_DVGO.png"
-              className="magnifier"
             />
             <Text fontSize="sm">DVGO</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bricks_TensoRF.png"
-              className="magnifier"
             />
             <Text fontSize="sm">TensoRF</Text>
           </Box>
           <Box w="100%" textAlign="center">
-            <Image
+            <ImageMagnifier
               width="100%"
               src="/images/publications/bricks_EgoNeRF.png"
               className="magnifier"

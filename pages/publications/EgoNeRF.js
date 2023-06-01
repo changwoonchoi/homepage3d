@@ -16,7 +16,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
-import useState from "react";
+import { useState } from "react";
 
 function ImageMagnifier({
   src,

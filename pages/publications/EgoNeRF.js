@@ -7,7 +7,8 @@ import {
     ListItem,
     Box,
     Text,
-    SimpleGrid
+    SimpleGrid,
+    AspectRatio
   } from '@chakra-ui/react'
   import Layout from '../../components/layouts/article'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -52,22 +53,18 @@ import {
         </Box>
 
         <Heading as="h3" variant="section-title">
-          Abstract
+         Overview Video 
         </Heading>
-        <WorkImage src="/images/publications/egonerf_teaser.jpg" alt="EgoNeRF_teaser" />
-        <P>
-          We present EgoNeRF, a practical solution to reconstruct large-scale real-world environments for VR assets.
-          Given a few seconds of casually captured 360 video, EgoNeRF can efficiently build neural radiance fields.
-          Motivated by the recent acceleration of NeRF using feature grids, we adopt spherical coordinate instead of conventional Cartesian coordinate.
-          Cartesian feature grid is inefficient to represent large-scale unbounded scenes because it has a spatially uniform resolution, regardless of distance from viewers.
-          The spherical parameterization better aligns with the rays of egocentric images, and yet enables factorization for performance enhancement.
-          However, the naïve spherical grid suffers from singularities at two poles, and also cannot represent unbounded scenes.
-          To avoid singularities near poles, we combine two balanced grids, which results in a quasi-uniform angular grid.
-          We also partition the radial grid exponentially and place an environment map at infinity to represent unbounded scenes.
-          Furthermore, with our resampling technique for grid-based methods, we can increase the number of valid samples to train NeRF volume.
-          We extensively evaluate our method in our newly introduced synthetic and real-world egocentric 360 video datasets, and it consistently achieves state-of-the-art performance.
-        </P>
-
+        <AspectRatio maxW="95ch" ratio={1.776} my={4}>
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/D-lsBhVP8zw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </AspectRatio>
+        <center><Text fontSize="12">CVPR Technical Talk Video</Text></center>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Keywords</Meta>
@@ -75,7 +72,7 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Paper</Meta>
-            <Link href="https://arxiv.org/abs/2303.12408" target="_blank">
+            <Link href="https://openaccess.thecvf.com/content/CVPR2023/html/Choi_Balanced_Spherical_Grid_for_Egocentric_View_Synthesis_CVPR_2023_paper.html" target="_blank">
               PDF Link
               <ExternalLinkIcon mx="2px" />
             </Link>
@@ -103,6 +100,91 @@ import {
           </ListItem>
         </List>
 
+        <Heading as="h3" variant="section-title">
+          Abstract
+        </Heading>
+        <P>
+          We present EgoNeRF, a practical solution to reconstruct large-scale real-world environments for VR assets.
+          Given a few seconds of casually captured 360 video, EgoNeRF can efficiently build neural radiance fields.
+          Motivated by the recent acceleration of NeRF using feature grids, we adopt spherical coordinate instead of conventional Cartesian coordinate.
+          Cartesian feature grid is inefficient to represent large-scale unbounded scenes because it has a spatially uniform resolution, regardless of distance from viewers.
+          The spherical parameterization better aligns with the rays of egocentric images, and yet enables factorization for performance enhancement.
+          However, the naïve spherical grid suffers from singularities at two poles, and also cannot represent unbounded scenes.
+          To avoid singularities near poles, we combine two balanced grids, which results in a quasi-uniform angular grid.
+          We also partition the radial grid exponentially and place an environment map at infinity to represent unbounded scenes.
+          Furthermore, with our resampling technique for grid-based methods, we can increase the number of valid samples to train NeRF volume.
+          We extensively evaluate our method in our newly introduced synthetic and real-world egocentric 360 video datasets, and it consistently achieves state-of-the-art performance.
+        </P>
+        <Box align="center" h="0.4em">
+        </Box>
+        <WorkImage src="/images/publications/egonerf_teaser.jpg" alt="EgoNeRF_teaser" />
+
+        <Heading as="h3" variant="section-title">
+          Dataset Overview
+        </Heading>
+        <P>
+          EgoNeRF takes a casual "Egocentric Video" as input.
+          We demonstrate some samples from our synthetic OmniBlender dataset and real-world Ricoh360 dataset.
+          By simply rotating the camera attached to the stick, we can capture a large environment around the viewer.
+          These videos are low-resolution version of our original dataset.
+          You can download the dataset from the link above.
+        </P>
+        <Heading as="h4" variant="section-subtitle">
+          OmniBlender
+        </Heading>
+        <SimpleGrid columns={{sm: 1, md: 4}} gap={2}>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/barbershop.webm" type="video/webm" />
+          </video>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/italian-flat.webm" type="video/webm" />
+          </video>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/bistro_bike.webm" type="video/webm" />
+          </video>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/pavilion_midday_pond.webm" type="video/webm" />
+          </video>
+        </SimpleGrid>
+
+        <Heading as="h4" variant="section-subtitle">
+          Ricoh360
+        </Heading>
+        <SimpleGrid columns={{sm: 1, md: 4}} gap={2}>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/bricks.webm" type="video/webm" />
+          </video>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/bridge.webm" type="video/webm" />
+          </video>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/ddp.webm" type="video/webm" />
+          </video>
+          <video width="100%" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="/images/publications/poster.webm" type="video/webm" />
+          </video>
+        </SimpleGrid>
+
+        <Box align="center" h="1em">
+        </Box>
+
+        <Heading as="h3" variant="section-title">
+          Qualitative Results
+        </Heading>
+        <Heading as="h4" variant="section-subtitle">
+          Free-view Rendered Video
+        </Heading>
+        <video width="100%" controls="controls">
+          <source src="/images/publications/barbershop_splitline_white.webm" type="video/webm" />
+        </video>
+        <Box align="center" h="0.5em">
+        </Box>
+        <video width="100%" controls="controls">
+          <source src="/images/publications/bistro_bike_splitline_white.webm" type="video/webm" />
+        </video>
+        <Heading as="h4" variant="section-subtitle">
+          Comparison with Baselines
+        </Heading>
 
         <Heading as="h3" variant="section-title">
           Citation

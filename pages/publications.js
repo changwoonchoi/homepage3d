@@ -26,7 +26,7 @@ const Publications = () => (
             journal="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023"
             author="Changwoon Choi, Sang Min Kim, Young Min Kim"
             project_page="none"
-            paper="https://arxiv.org/abs/2303.12408"
+            paper="https://openaccess.thecvf.com/content/CVPR2023/html/Choi_Balanced_Spherical_Grid_for_Egocentric_View_Synthesis_CVPR_2023_paper.html"
             video="https://www.youtube.com/watch?v=D-lsBhVP8zw"
             code="https://github.com/changwoonchoi/EgoNeRF"
           >

@@ -3,6 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { PubGridItem, PubGridItemLink } from '../components/grid-item'
 
+import soon from '../public/images/publications/soon.png'
 import thumbGCA from '../public/images/publications/gca.gif'
 import thumbcGCA from '../public/images/publications/cgca.gif'
 import thumbPICCOLO from '../public/images/publications/piccolo.jpg'
@@ -18,6 +19,20 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
+        <Section>
+          <PubGridItem
+            title="LDL: Line Distance Functions for Panoramic Localization"
+            thumbnail={soon}
+            journal="International Conference on Computer Vision (ICCV), 2023"
+            author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
+            project_page="none"
+            paper="none"
+            video="none"
+            code="none"
+          >
+          </PubGridItem>
+        </Section>
+
         <Section>
           <PubGridItemLink
             id="EgoNeRF"

@@ -3,13 +3,13 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { PubGridItem, PubGridItemLink } from '../components/grid-item'
 
-import soon from '../public/images/publications/soon.png'
 import thumbGCA from '../public/images/publications/gca.gif'
 import thumbcGCA from '../public/images/publications/cgca.gif'
 import thumbPICCOLO from '../public/images/publications/piccolo.jpg'
 import thumbCPO from '../public/images/publications/cpo.jpg'
 import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
+import thumbLDL from '../public/images/publications/ldl.jpg'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -22,7 +22,7 @@ const Publications = () => (
         <Section>
           <PubGridItem
             title="LDL: Line Distance Functions for Panoramic Localization"
-            thumbnail={soon}
+            thumbnail={thumbLDL}
             journal="International Conference on Computer Vision (ICCV), 2023"
             author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
             project_page="none"

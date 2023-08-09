@@ -28,7 +28,7 @@ const Publications = () => (
             project_page="none"
             paper="none"
             video="none"
-            code="none"
+            code="https://github.com/82magnolia/panoramic-localization"
           >
           </PubGridItem>
         </Section>

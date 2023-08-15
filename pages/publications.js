@@ -36,8 +36,7 @@ const Publications = () => (
         </Section>
 
         <Section>
-          <PubGridItemLink
-            id="CTM"
+          <PubGridItem
             title="Robust Novel View Synthesis with Color Transform Module"
             thumbnail={placeholder}
             journal="Pacific Graphics (Computer Graphics Forum) 2023, conditionally accepted"
@@ -47,7 +46,7 @@ const Publications = () => (
             video="none"
             code="none"
           >
-          </PubGridItemLink>
+          </PubGridItem>
         </Section>
 
         <Section>

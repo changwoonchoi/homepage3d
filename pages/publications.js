@@ -10,6 +10,7 @@ import thumbCPO from '../public/images/publications/cpo.jpg'
 import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
 import thumbLDL from '../public/images/publications/ldl_1.gif'
+import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -19,6 +20,36 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
+        <Section>
+          <PubGridItemLink
+            id="IBL-NeRF"
+            title="IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields"
+            thumbnail={thumbIBLNeRF}
+            journal="Pacific Graphics (Computer Graphics Forum), conditionally accepted"
+            author="Changwoon Choi, Juhyeon Kim, Young Min Kim"
+            project_page="none"
+            paper="https://arxiv.org/abs/2210.08202"
+            video="none"
+            code="https://github.com/changwoonchoi/IBL-NeRF"
+          >
+          </PubGridItemLink>
+        </Section>
+
+        <Section>
+          <PubGridItemLink
+            id="CTM"
+            title="Robust Novel View Synthesis with Color Transform Module"
+            thumbnail={placeholder}
+            journal="Pacific Graphics (Computer Graphics Forum), conditionally accepted"
+            author="Sang Min Kim, Changwoon Choi, Hyeongjun Heo, Young Min Kim"
+            project_page="none"
+            paper="none"
+            video="none"
+            code="none"
+          >
+          </PubGridItemLink>
+        </Section>
+
         <Section>
           <PubGridItem
             title="LDL: Line Distance Functions for Panoramic Localization"
@@ -44,21 +75,6 @@ const Publications = () => (
             paper="https://openaccess.thecvf.com/content/CVPR2023/html/Choi_Balanced_Spherical_Grid_for_Egocentric_View_Synthesis_CVPR_2023_paper.html"
             video="https://www.youtube.com/watch?v=D-lsBhVP8zw"
             code="https://github.com/changwoonchoi/EgoNeRF"
-          >
-          </PubGridItemLink>
-        </Section>
-
-        <Section>
-          <PubGridItemLink
-            id="IBL-NeRF"
-            title="IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields"
-            thumbnail={thumbIBLNeRF}
-            journal="arXiv preprint"
-            author="Changwoon Choi, Juhyeon Kim, Young Min Kim"
-            project_page="none"
-            paper="https://arxiv.org/abs/2210.08202"
-            video="none"
-            code="https://github.com/changwoonchoi/IBL-NeRF"
           >
           </PubGridItemLink>
         </Section>

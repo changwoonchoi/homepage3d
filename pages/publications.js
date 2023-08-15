@@ -9,7 +9,7 @@ import thumbPICCOLO from '../public/images/publications/piccolo.jpg'
 import thumbCPO from '../public/images/publications/cpo.jpg'
 import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
-import thumbLDL from '../public/images/publications/ldl.jpg'
+import thumbLDL from '../public/images/publications/ldl_1.gif'
 
 const Publications = () => (
   <Layout title="Publications">

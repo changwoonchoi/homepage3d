@@ -110,7 +110,9 @@ function ImageMagnifier({
             </Link>
           </Box>
           <Box w="100%" textAlign="center">
-            <Text fontSize="14" fontWeight="800">Sang Min Kim</Text>
+            <Link href="https://sangminkim-99.github.io" target="_blank">
+              <Text fontSize="14" fontWeight="800">Sang Min Kim</Text>
+            </Link>
           </Box>
           <Box w="100%" textAlign="center">
             <Link href="https://3d.snu.ac.kr/" target="_blank">
@@ -135,7 +137,7 @@ function ImageMagnifier({
         </Box>
 
         <Heading as="h3" variant="section-title">
-         Overview Video 
+         Overview Video
         </Heading>
         <AspectRatio maxW="95ch" ratio={1.776} my={4}>
           <iframe

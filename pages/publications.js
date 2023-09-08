@@ -57,7 +57,7 @@ const Publications = () => (
             journal="International Conference on Computer Vision (ICCV), 2023"
             author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
             project_page="none"
-            paper="none"
+            paper="https://arxiv.org/pdf/2308.13989.pdf"
             video="none"
             code="https://github.com/82magnolia/panoramic-localization"
           >

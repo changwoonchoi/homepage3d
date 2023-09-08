@@ -10,7 +10,8 @@ import thumbCPO from '../public/images/publications/cpo.jpg'
 import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
 import thumbLDL from '../public/images/publications/ldl_1.gif'
-import placeholder from '../public/images/publications/soon.png'
+import thumbCTM from '../public/images/publications/ctm.gif'
+// import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -38,7 +39,7 @@ const Publications = () => (
         <Section>
           <PubGridItem
             title="Robust Novel View Synthesis with Color Transform Module"
-            thumbnail={placeholder}
+            thumbnail={thumbCTM}
             journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023 (conditionally accepted)"
             author="Sang Min Kim, Changwoon Choi, Hyeongjun Heo, Young Min Kim"
             project_page="none"

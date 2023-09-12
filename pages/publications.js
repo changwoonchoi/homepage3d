@@ -26,7 +26,7 @@ const Publications = () => (
             id="IBL-NeRF"
             title="IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields"
             thumbnail={thumbIBLNeRF}
-            journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023 (conditionally accepted)"
+            journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
             author="Changwoon Choi*, Juhyeon Kim*, Young Min Kim"
             project_page="none"
             paper="https://arxiv.org/abs/2210.08202"
@@ -40,12 +40,12 @@ const Publications = () => (
           <PubGridItem
             title="Robust Novel View Synthesis with Color Transform Module"
             thumbnail={thumbCTM}
-            journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023 (conditionally accepted)"
+            journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
             author="Sang Min Kim, Changwoon Choi, Hyeongjun Heo, Young Min Kim"
             project_page="none"
             paper="none"
             video="none"
-            code="none"
+            code="https://github.com/sangminkim-99/ColorTransformModule"
           >
           </PubGridItem>
         </Section>

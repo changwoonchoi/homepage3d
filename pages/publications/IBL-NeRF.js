@@ -21,7 +21,7 @@ import {
     <Layout title="IBL-NeRF">
       <Container>
         <Title>
-          IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields <Badge>arXiv 2022</Badge>
+          IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields <Badge>PG 2023</Badge>
         </Title>
 
         <SimpleGrid columns={3} gap={6}>

@@ -43,7 +43,7 @@ const Publications = () => (
             journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
             author="Sang Min Kim, Changwoon Choi, Hyeongjun Heo, Young Min Kim"
             project_page="none"
-            paper="none"
+            paper="https://3d.snu.ac.kr/papers/ColorTransformNeRF.pdf"
             video="none"
             code="https://github.com/sangminkim-99/ColorTransformModule"
           >

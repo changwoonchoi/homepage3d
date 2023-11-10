@@ -29,7 +29,7 @@ const Publications = () => (
             journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
             author="Changwoon Choi*, Juhyeon Kim*, Young Min Kim"
             project_page="none"
-            paper="https://arxiv.org/abs/2210.08202"
+            paper="https://doi.org/10.1111/cgf.14929"
             video="none"
             code="https://github.com/changwoonchoi/IBL-NeRF"
           >

@@ -101,7 +101,7 @@ const Publications = () => (
             title="Probabilistic Implicit Scene Completion"
             thumbnail={thumbcGCA}
             journal="International Conference on Learning Representations (ICLR), 2022"
-            author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
+            author="Dongsu Zhang, Changwoon Choi, Inbum Park, Young Min Kim"
             project_page="none"
             paper="https://openreview.net/forum?id=BnQhMqDfcKG"
             video="none"

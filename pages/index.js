@@ -177,7 +177,10 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023.12 - </BioYear>
-          Research Scientist Intern, NAVER Cloud (CLOVA)
+          Research Scientist Intern, {' '}
+          <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false}>
+            NAVER Cloud (CLOVA)
+          </Link>
         </BioSection>
         <BioSection>
           <BioYear>Conference Reviewer</BioYear>

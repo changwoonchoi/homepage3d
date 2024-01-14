@@ -154,7 +154,7 @@ const Home = () => (
         <BioSection>
           <BioYear>2020.09 - Present</BioYear>
           M.S./Ph.D., Seoul National University, ECE, advised by {' '}
-          <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false}>
+          <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false} target="_blank">
             Young Min Kim
           </Link>
         </BioSection>
@@ -171,14 +171,14 @@ const Home = () => (
         <BioSection>
           <BioYear>2023.05 - 2023.12</BioYear>
           Visiting Graduate Student, University of California, San Diego, advised by {' '}
-          <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false}>
+          <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
             Hao Su
           </Link>
         </BioSection>
         <BioSection>
           <BioYear>2023.12 - </BioYear>
           Research Scientist Intern, {' '}
-          <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false}>
+          <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
             NAVER Cloud (CLOVA)
           </Link>
         </BioSection>

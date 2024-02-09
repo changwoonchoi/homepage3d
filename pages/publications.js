@@ -11,7 +11,7 @@ import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
 import thumbLDL from '../public/images/publications/ldl_1.gif'
 import thumbCTM from '../public/images/publications/ctm_lowres.gif'
-import thumb3Doodle from '../public/images/publications/soon.png'
+// import thumb3Doodle from '../public/images/publications/soon.png'
 // import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
@@ -22,19 +22,6 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
-        <Section>
-          <PubGridItem
-            title="3Doodle: Compact Abstraction of Objects with 3D Strokes"
-            thumbnail={thumb3Doodle}
-            journal="arXiv, 2024"
-            author="Changwoon Choi, Jaeah Lee, Jaesik Park, Young Min Kim"
-            project_page="none"
-            paper="https://arxiv.org/abs/2402.03690"
-            video="none"
-            code="none"
-          >
-          </PubGridItem>
-        </Section>
         <Section>
           <PubGridItemLink
             id="IBL-NeRF"

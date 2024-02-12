@@ -184,7 +184,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>Conference Reviewer</BioYear>
-          CVPR, ICCV, ECCV, 3DV, NeurIPS
+          SIGGRAPH, CVPR, ICCV, ECCV, 3DV, ACCV, NeurIPS
         </BioSection>
       </Section>
 

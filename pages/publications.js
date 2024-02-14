@@ -28,7 +28,7 @@ const Publications = () => (
             title="IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields"
             thumbnail={thumbIBLNeRF}
             journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
-            author="Changwoon Choi*, Juhyeon Kim*, Young Min Kim (* Equally contributed)"
+            author="Changwoon Choi*, Juhyeon Kim*, Young Min Kim (*Equally contributed)"
             project_page="none"
             paper="https://doi.org/10.1111/cgf.14929"
             video="none"

@@ -176,8 +176,8 @@ const Home = () => (
           </Link>
         </BioSection>
         <BioSection>
-          <BioYear>2023.12 - </BioYear>
-          Research Scientist Intern, {' '}
+          <BioYear>2023.12 - 2024.03</BioYear>
+          Research Intern, {' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
             NAVER Cloud (CLOVA)
           </Link>

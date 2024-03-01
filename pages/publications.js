@@ -58,7 +58,7 @@ const Publications = () => (
             thumbnail={thumbCTM}
             journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
             author="Sang Min Kim, Changwoon Choi, Hyeongjun Heo, Young Min Kim"
-            project_page="none"
+            project_page="https://3d.snu.ac.kr/publications/ColorTransformModule"
             paper="https://3d.snu.ac.kr/papers/ColorTransformNeRF.pdf"
             video="none"
             code="https://github.com/sangminkim-99/ColorTransformModule"
@@ -72,7 +72,7 @@ const Publications = () => (
             thumbnail={thumbLDL}
             journal="International Conference on Computer Vision (ICCV), 2023"
             author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
-            project_page="none"
+            project_page="https://3d.snu.ac.kr/publications/LDL"
             paper="https://arxiv.org/pdf/2308.13989.pdf"
             video="https://www.youtube.com/watch?v=cQ5l4rauNY0"
             code="https://github.com/82magnolia/panoramic-localization"
@@ -102,7 +102,7 @@ const Publications = () => (
             thumbnail={thumbCPO}
             journal="European Conference on Computer Vision (ECCV), 2022"
             author="Junho Kim, Hojun Jang, Changwoon Choi, Young Min Kim"
-            project_page="none"
+            project_page="https://3d.snu.ac.kr/publications/CPO"
             paper="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690173.pdf"
             video="https://www.youtube.com/watch?v=V6XjHL5q0_Y&feature=youtu.be"
             code="https://github.com/82magnolia/cpo"
@@ -134,7 +134,7 @@ const Publications = () => (
             thumbnail={thumbPICCOLO}
             journal="International Conference on Computer Vision (ICCV), 2021"
             author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
-            project_page="none"
+            project_page="https://3d.snu.ac.kr/publications/PICCOLO"
             paper="https://openaccess.thecvf.com/content/ICCV2021/html/Kim_PICCOLO_Point_Cloud-Centric_Omnidirectional_Localization_ICCV_2021_paper.html"
             video="https://www.youtube.com/watch?v=E-_lEsChfoE"
             code="https://github.com/82magnolia/piccolo"

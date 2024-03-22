@@ -72,7 +72,17 @@ const Home = () => (
           </Link>
           .
           I received my Bacheler&apos;s degree also in Electrical and Computer Engineering from Seoul National University.
-          My current research interest is in the field of computer vision and graphics with neural implicit representations including NeRF.
+          I was a resesarch intern at {' '}
+          <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
+            NAVER Cloud (CLOVA)
+          </Link>
+          .
+        </Paragraph>
+        <Paragraph>
+          My research goal is to capture, reconstruct, visualize, and manipulate the 4D real-world.
+          I love to discover and formulate new research problems, especially paractical and challenging ones.
+        </Paragraph>
+        <Paragraph>
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -170,7 +180,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023.05 - 2023.12</BioYear>
-          Visiting Graduate Student, University of California, San Diego, advised by {' '}
+          Visiting Graduate Student, University of California, San Diego, hosted by {' '}
           <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
             Hao Su
           </Link>

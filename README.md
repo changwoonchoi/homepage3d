@@ -13,6 +13,12 @@
 - [Framer Motion](https://www.framer.com/motion/) - An animation library for React
 - [Vercel](https://vercel.com/) - Cloud platform to host website
 
+## Install
+```
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion next react react-dom
+npm i -D eslint eslint-next prettier
+```
+
 ## Project structure
 
 ```
@@ -33,7 +39,7 @@ MIT License.
 
 You can create your own homepage for free without notifying me by forking this project under the following conditions:
 
-- Add a link to [my homepage](https://changwoon.info/)
+- Add a link to [my homepage](https://changwoon.info/) and [Takuya's website](https://www.craftz.dog/)
 - Do not use the 3D model
 
 Check out [LICENSE](./LICENSE) for more detail.

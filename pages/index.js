@@ -83,6 +83,9 @@ const Home = () => (
           I love to discover and formulate new research problems, especially paractical and challenging ones.
         </Paragraph>
         <Paragraph>
+          I am always open to new opportunities and collaborations! Please feel free to contact me if you are interested in my research. <i> I am currently looking for a research internship. </i>
+        </Paragraph>
+        <Paragraph>
         </Paragraph>
         <Box align="center" my={4}>
           <Button

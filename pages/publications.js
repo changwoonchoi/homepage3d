@@ -26,7 +26,7 @@ const Publications = () => (
         <Section>
           <PubGridItem
             id="materialGCA"
-            title="Interpreting Chiral Morphogenesis of Gold Using Generative Cellular Automata"
+            title="Investigating Chiral Morphogenesis of Gold Using Generative Cellular Automata"
             thumbnail={thumbnailmaterialGCA}
             journal="Nature Materials, 2024"
             author="Sang Won Im*, Dongsu Zhang*, Jeong Hyun Han, Ryeong Myeong Kim, Changwoon Choi, Young Min Kim**, Ki Tae Nam**"

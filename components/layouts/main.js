@@ -4,6 +4,7 @@ import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 import SceneLoader from '../load_scene'
+import { Analytics } from '@vercel/analytics/react'
 
 const Scene = dynamic(() => import('../scene'), {
   ssr: false,
@@ -36,6 +37,7 @@ const Main = ({ children, router }) => {
       </Box>
 
         {children}
+        <Analytics />
 
         <Footer />
       </Container>

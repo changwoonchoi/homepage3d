@@ -11,7 +11,7 @@ import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
 import thumbLDL from '../public/images/publications/ldl_1.gif'
 import thumbCTM from '../public/images/publications/ctm_lowres.gif'
-import thumbnailmaterialGCA from '../public/images/publications/material_gca.png'
+// import thumbnailmaterialGCA from '../public/images/publications/material_gca.png'
 // import thumb3Doodle from '../public/images/publications/soon.png'
 // import placeholder from '../public/images/publications/soon.png'
 
@@ -23,20 +23,6 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
-        <Section>
-          <PubGridItem
-            id="materialGCA"
-            title="Investigating Chiral Morphogenesis of Gold Using Generative Cellular Automata"
-            thumbnail={thumbnailmaterialGCA}
-            journal="Nature Materials, 2024"
-            author="Sang Won Im*, Dongsu Zhang*, Jeong Hyun Han, Ryeong Myeong Kim, Changwoon Choi, Young Min Kim**, Ki Tae Nam**"
-            project_page="none"
-            paper="none"
-            video="none"
-            code="none"
-          >
-          </PubGridItem>
-        </Section>
         <Section>
           <PubGridItemLink
             id="IBL-NeRF"

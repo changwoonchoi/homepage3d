@@ -44,9 +44,9 @@ const Publications = () => (
             journal="Nature Materials, 2024"
             author="Sang Won Im*, Dongsu Zhang*, Jeong Hyun Han, Ryeong Myeong Kim, Changwoon Choi, Young Min Kim**, Ki Tae Nam**"
             project_page="none"
-            paper="none"
+            paper="https://www.nature.com/articles/s41563-024-01889-x"
             video="none"
-            code="none"
+            code="https://github.com/sangwonim/gca-chiral-morphogenesis"
           >
           </PubGridItem>
         </Section>

@@ -7,7 +7,8 @@ import thumbGCA from '../public/images/publications/gca.gif'
 import thumbcGCA from '../public/images/publications/cgca.gif'
 import thumbPICCOLO from '../public/images/publications/piccolo.jpg'
 import thumbCPO from '../public/images/publications/cpo.jpg'
-import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
+//import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
+import thumbIBLNeRF from '../public/images/publications/IBL-NeRF.gif'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
 import thumbLDL from '../public/images/publications/ldl_1.gif'
 import thumbCTM from '../public/images/publications/ctm_lowres.gif'
@@ -28,7 +29,7 @@ const Publications = () => (
             id="3Doodle"
             title="3Doodle: Compact Abstraction of Objects with 3D Strokes"
             thumbnail={thumb3Doodle}
-            journal="SIGGRAPH (Transactions on Graphics), 2024"
+            journal="SIGGRAPH (ACM Transactions on Graphics), 2024"
             author="Changwoon Choi, Jaeah Lee, Jaesik Park, Young Min Kim"
             project_page="none"
             paper="https://arxiv.org/abs/2402.03690"

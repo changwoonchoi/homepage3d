@@ -196,7 +196,7 @@ const Home = () => (
           </Link>
         </BioSection>
         <BioSection>
-          <BioYear>Conference Reviewer</BioYear>
+          <BioYear>Reviewer</BioYear>
           SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, CVPR, ICCV, ECCV, 3DV, ACCV, NeurIPS
         </BioSection>
       </Section>

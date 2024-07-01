@@ -14,7 +14,7 @@ import thumbLDL from '../public/images/publications/ldl_1.gif'
 import thumbCTM from '../public/images/publications/ctm_lowres.gif'
 import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
-// import placeholder from '../public/images/publications/soon.png'
+import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -26,11 +26,25 @@ const Publications = () => (
       <SimpleGrid columns={{sm:1}} gap={6}>
         <Section>
           <PubGridItem
+            id="I2SLAM"
+            title=<p><i>I<sup>2</sup></i>-SLAM: Inverting Imaging Process for Robust Photorealistic Dense SLAM</p>
+            thumbnail={placeholder}
+            journal="European Conference Computer Vision (ECCV), 2024"
+            project_page="none"
+            author=<p>Gwangtak Bae*, <b>Changwoon Choi*</b>, Hyeongjun Heo, Sang Min Kim, Young Min Kim<br/><i>(*Equally contributed)</i></p>
+            paper="none"
+            video="none"
+            code="none"
+          >
+          </PubGridItem>
+        </Section>
+        <Section>
+          <PubGridItem
             id="3Doodle"
             title="3Doodle: Compact Abstraction of Objects with 3D Strokes"
             thumbnail={thumb3Doodle}
             journal="SIGGRAPH (ACM Transactions on Graphics), 2024"
-            author="Changwoon Choi, Jaeah Lee, Jaesik Park, Young Min Kim"
+            author=<p><b>Changwoon Choi</b>, Jaeah Lee, Jaesik Park, Young Min Kim</p>
             project_page="none"
             paper="https://arxiv.org/abs/2402.03690"
             video="none"
@@ -43,7 +57,7 @@ const Publications = () => (
             title="Investigating Chiral Morphogenesis of Gold Using Generative Cellular Automata"
             thumbnail={thumbmaterialGCA}
             journal="Nature Materials, 2024"
-            author="Sang Won Im*, Dongsu Zhang*, Jeong Hyun Han, Ryeong Myeong Kim, Changwoon Choi, Young Min Kim**, Ki Tae Nam**"
+            author=<p>Sang Won Im*, Dongsu Zhang*, Jeong Hyun Han, Ryeong Myeong Kim, <b>Changwoon Choi</b>, Young Min Kim**, Ki Tae Nam**</p>
             project_page="none"
             paper="https://www.nature.com/articles/s41563-024-01889-x"
             video="none"
@@ -57,7 +71,7 @@ const Publications = () => (
             title="IBL-NeRF: Image-Based Lighting Formulation of Neural Radiance Fields"
             thumbnail={thumbIBLNeRF}
             journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
-            author="Changwoon Choi*, Juhyeon Kim*, Young Min Kim (*Equally contributed)"
+            author=<p><b>Changwoon Choi*</b>, Juhyeon Kim*, Young Min Kim<br/><i>(*Equally contributed)</i></p>
             project_page="none"
             paper="https://doi.org/10.1111/cgf.14929"
             video="none"
@@ -71,7 +85,7 @@ const Publications = () => (
             title="Robust Novel View Synthesis with Color Transform Module"
             thumbnail={thumbCTM}
             journal="Computer Graphics Forum (Proceedings of Pacific Graphics), 2023"
-            author="Sang Min Kim, Changwoon Choi, Hyeongjun Heo, Young Min Kim"
+            author=<p>Sang Min Kim, <b>Changwoon Choi</b>, Hyeongjun Heo, Young Min Kim</p>
             project_page="https://3d.snu.ac.kr/publications/ColorTransformModule"
             paper="https://3d.snu.ac.kr/papers/ColorTransformNeRF.pdf"
             video="none"
@@ -85,7 +99,7 @@ const Publications = () => (
             title="LDL: Line Distance Functions for Panoramic Localization"
             thumbnail={thumbLDL}
             journal="International Conference on Computer Vision (ICCV), 2023"
-            author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
+            author=<p>Junho Kim, <b>Changwoon Choi</b>, Hojun Jang, Young Min Kim</p>
             project_page="https://3d.snu.ac.kr/publications/LDL"
             paper="https://arxiv.org/pdf/2308.13989.pdf"
             video="https://www.youtube.com/watch?v=cQ5l4rauNY0"
@@ -100,7 +114,7 @@ const Publications = () => (
             title="Balanced Spherical Grid for Egocentric View Synthesis"
             thumbnail={thumbEgoNeRF}
             journal="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023"
-            author="Changwoon Choi, Sang Min Kim, Young Min Kim"
+            author=<p><b>Changwoon Choi</b>, Sang Min Kim, Young Min Kim</p>
             project_page="none"
             paper="https://openaccess.thecvf.com/content/CVPR2023/html/Choi_Balanced_Spherical_Grid_for_Egocentric_View_Synthesis_CVPR_2023_paper.html"
             video="https://www.youtube.com/watch?v=D-lsBhVP8zw"
@@ -115,7 +129,7 @@ const Publications = () => (
             title="CPO: Change Robust Panorama to Point Cloud Localization"
             thumbnail={thumbCPO}
             journal="European Conference on Computer Vision (ECCV), 2022"
-            author="Junho Kim, Hojun Jang, Changwoon Choi, Young Min Kim"
+            author=<p>Junho Kim, Hojun Jang, <b>Changwoon Choi</b>, Young Min Kim</p>
             project_page="https://3d.snu.ac.kr/publications/CPO"
             paper="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690173.pdf"
             video="https://www.youtube.com/watch?v=V6XjHL5q0_Y&feature=youtu.be"
@@ -131,7 +145,7 @@ const Publications = () => (
             title="Probabilistic Implicit Scene Completion"
             thumbnail={thumbcGCA}
             journal="International Conference on Learning Representations (ICLR), 2022"
-            author="Dongsu Zhang, Changwoon Choi, Inbum Park, Young Min Kim"
+            author=<p>Dongsu Zhang, <b>Changwoon Choi</b>, Inbum Park, Young Min Kim</p>
             project_page="none"
             paper="https://openreview.net/forum?id=BnQhMqDfcKG"
             video="none"
@@ -147,7 +161,7 @@ const Publications = () => (
             title="PICCOLO: Point Cloud-Centric Omnidirectional Localization"
             thumbnail={thumbPICCOLO}
             journal="International Conference on Computer Vision (ICCV), 2021"
-            author="Junho Kim, Changwoon Choi, Hojun Jang, Young Min Kim"
+            author=<p>Junho Kim, <b>Changwoon Choi</b>, Hojun Jang, Young Min Kim</p>
             project_page="https://3d.snu.ac.kr/publications/PICCOLO"
             paper="https://openaccess.thecvf.com/content/ICCV2021/html/Kim_PICCOLO_Point_Cloud-Centric_Omnidirectional_Localization_ICCV_2021_paper.html"
             video="https://www.youtube.com/watch?v=E-_lEsChfoE"
@@ -163,7 +177,7 @@ const Publications = () => (
             title="Learning to Generate 3D shapes with Generative Cellular Automata"
             thumbnail={thumbGCA}
             journal="International Conference on Learning Representations (ICLR), 2021"
-            author="Dongsu Zhang, Changwoon Choi, Jeonghwan Kim, Young Min Kim"
+            author=<p>Dongsu Zhang, <b>Changwoon Choi</b>, Jeonghwan Kim, Young Min Kim</p>
             project_page="none"
             paper="https://openreview.net/forum?id=rABUmU3ulQh"
             video="none"

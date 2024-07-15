@@ -14,7 +14,8 @@ import thumbLDL from '../public/images/publications/ldl_1.gif'
 import thumbCTM from '../public/images/publications/ctm_lowres.gif'
 import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
-import placeholder from '../public/images/publications/soon.png'
+import thumbI2SLAM from '../public/images/publications/i2slam.gif'
+// import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -28,7 +29,7 @@ const Publications = () => (
           <PubGridItem
             id="I2SLAM"
             title=<p><i>I<sup>2</sup></i>-SLAM: Inverting Imaging Process for Robust Photorealistic Dense SLAM</p>
-            thumbnail={placeholder}
+            thumbnail={thumbI2SLAM}
             journal="European Conference Computer Vision (ECCV), 2024"
             project_page="none"
             author=<p>Gwangtak Bae*, <b>Changwoon Choi*</b>, Hyeongjun Heo, Sang Min Kim, Young Min Kim<br/><i>(*Equally contributed)</i></p>

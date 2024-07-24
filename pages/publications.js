@@ -33,9 +33,10 @@ const Publications = () => (
             journal="European Conference Computer Vision (ECCV), 2024"
             project_page="none"
             author=<p>Gwangtak Bae*, <b>Changwoon Choi*</b>, Hyeongjun Heo, Sang Min Kim, Young Min Kim<br/><i>(*Equally contributed)</i></p>
-            paper="none"
+            paper="https://arxiv.org/abs/2407.11347"
             video="none"
             code="none"
+            slides="none"
           >
           </PubGridItem>
         </Section>
@@ -46,8 +47,8 @@ const Publications = () => (
             thumbnail={thumb3Doodle}
             journal="SIGGRAPH (ACM Transactions on Graphics), 2024"
             author=<p><b>Changwoon Choi</b>, Jaeah Lee, Jaesik Park, Young Min Kim</p>
-            project_page="none"
-            paper="https://arxiv.org/abs/2402.03690"
+            project_page="https://changwoonchoi.github.io/3Doodle/"
+            paper="https://dl.acm.org/doi/10.1145/3658156"
             video="none"
             code="https://github.com/changwoonchoi/3Doodle"
           >

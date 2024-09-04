@@ -31,7 +31,7 @@ const Publications = () => (
             title=<p><i>I<sup>2</sup></i>-SLAM: Inverting Imaging Process for Robust Photorealistic Dense SLAM</p>
             thumbnail={thumbI2SLAM}
             journal="European Conference Computer Vision (ECCV), 2024"
-            project_page="none"
+            project_page="https://changwoonchoi.github.io/i2slam/"
             author=<p>Gwangtak Bae*, <b>Changwoon Choi*</b>, Hyeongjun Heo, Sang Min Kim, Young Min Kim<br/><i>(*Equally contributed)</i></p>
             paper="https://arxiv.org/abs/2407.11347"
             video="none"

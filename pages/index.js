@@ -102,6 +102,16 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
+          News
+        </Heading>
+        <BioSection>
+          <BioYear>2024.09</BioYear>
+          <i>I'll attend ECCV 2024. Feel free to send me an e-mail if you want to meet me!!</i>
+        </BioSection>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
           Info
         </Heading>
         <List>

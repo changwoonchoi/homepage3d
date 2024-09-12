@@ -106,7 +106,7 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2024.09</BioYear>
-          <i>I&aposm attending ECCV 2024. Feel free to send me an e-mail if you want to meet me!!</i>
+          <i>I&apos;m attending ECCV 2024. Feel free to send me an e-mail if you want to meet me!!</i>
         </BioSection>
       </Section>
 

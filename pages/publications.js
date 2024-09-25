@@ -33,7 +33,7 @@ const Publications = () => (
             journal="European Conference Computer Vision (ECCV), 2024"
             project_page="https://changwoonchoi.github.io/i2slam/"
             author=<p>Gwangtak Bae*, <b>Changwoon Choi*</b>, Hyeongjun Heo, Sang Min Kim, Young Min Kim<br/><i>(*Equally contributed)</i></p>
-            paper="https://arxiv.org/abs/2407.11347"
+            paper="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03857.pdf"
             video="https://www.youtube.com/watch?v=R4C-ZkVae00"
             code="none"
             slides="none"

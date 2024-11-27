@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import NextLink from 'next/link'
 import {
   Link,
@@ -8,9 +9,10 @@ import {
   Button,
   List,
   ListItem,
-  chakra
+  chakra,
+  Collapse,
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -23,7 +25,9 @@ const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const Home = () => (
+const Home = () => {
+  const [showOldNews, setShowOldNews] = useState(false);
+  return (
   <Layout>
     <Container>
 
@@ -104,10 +108,44 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           News
         </Heading>
-        <BioSection>
-          <BioYear>2024.09</BioYear>
-          <i>I&apos;m attending ECCV 2024. Feel free to send me an e-mail if you want to meet me!!</i>
-        </BioSection>
+      </Section>
+      <Section delay={0.3}>
+        <Heading
+          as="h3"
+          variant="section-subtitle"
+          cursor="pointer"
+          onClick={() => setShowOldNews(!showOldNews)}
+          display="flex"
+        >
+          Old News
+          {showOldNews ? <ChevronUpIcon /> : <ChevronDownIcon />}
+        </Heading>
+        <Collapse in={showOldNews} animateOpacity>
+          <BioSection>
+            <BioYear>2024.10</BioYear>
+            I&apos;m attending ECCV 2024. See you at Milano!
+          </BioSection>
+          <BioSection>
+            <BioYear>2024.07</BioYear>
+            I&apos;m attending SIGGRAPH 2024. See you at Denver!
+          </BioSection>
+          <BioSection>
+            <BioYear>2023.12</BioYear>
+            I'm joining NAVER Cloud (CLOVA) as a research intern.
+          </BioSection>
+          <BioSection>
+            <BioYear>2023.10</BioYear>
+            I'm attending Pacific Graphics 2023. See you at Daejeon!
+          </BioSection>
+          <BioSection>
+            <BioYear>2023.06</BioYear>
+            I'm attending CVPR 2023. See you at Vancouver!
+          </BioSection>
+          <BioSection>
+            <BioYear>2023.05</BioYear>
+            Visiting UC San Diego as a visiting graduate student, hosted by Hao Su.
+          </BioSection>
+        </Collapse>
       </Section>
 
       <Section delay={0.2}>
@@ -217,7 +255,8 @@ const Home = () => (
 
     </Container>
   </Layout>
-)
+  );
+};
 
 export default Home
 export { getServerSideProps } from '../components/chakra'

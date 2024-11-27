@@ -131,15 +131,15 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2023.12</BioYear>
-            I'm joining NAVER Cloud (CLOVA) as a research intern.
+            I&apos;m joining NAVER Cloud (CLOVA) as a research intern.
           </BioSection>
           <BioSection>
             <BioYear>2023.10</BioYear>
-            I'm attending Pacific Graphics 2023. See you at Daejeon!
+            I&apos;m attending Pacific Graphics 2023. See you at Daejeon!
           </BioSection>
           <BioSection>
             <BioYear>2023.06</BioYear>
-            I'm attending CVPR 2023. See you at Vancouver!
+            I&apos;m attending CVPR 2023. See you at Vancouver!
           </BioSection>
           <BioSection>
             <BioYear>2023.05</BioYear>

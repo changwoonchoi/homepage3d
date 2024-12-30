@@ -108,6 +108,14 @@ const Home = () => {
         <Heading as="h3" variant="section-title">
           News
         </Heading>
+        <BioSection>
+          <BioYear>2024.12</BioYear>
+          Check our new arXiv preprint{' '}
+          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false}>
+            Humans as a Calibration Pattern
+          </Link>
+          !
+        </BioSection>
       </Section>
       <Section delay={0.3}>
         <Heading

@@ -109,6 +109,10 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2025.01</BioYear>
+          I received a Young Researcher Award from SNU INMC!
+        </BioSection>
+        <BioSection>
           <BioYear>2024.12</BioYear>
           Check our new arXiv preprint{' '}
           <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false}>
@@ -173,7 +177,7 @@ const Home = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="CV_English.pdf" target="_blank">
+            <Link href="CV_Changwoon.pdf" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"

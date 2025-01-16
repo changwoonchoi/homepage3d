@@ -110,7 +110,7 @@ const Home = () => {
         </Heading>
         <BioSection>
           <BioYear>2025.01</BioYear>
-          I received a Young Researcher Award from SNU INMC!
+          I received a SNU INMC 2024 Young Researcher Award!
         </BioSection>
         <BioSection>
           <BioYear>2024.12</BioYear>

@@ -27,6 +27,7 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => {
   const [showOldNews, setShowOldNews] = useState(false);
+  const [showMap, setShowMap] = useState(false);
   return (
   <Layout>
     <Container>
@@ -260,6 +261,19 @@ const Home = () => {
           SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, CVPR, ICCV, ECCV, 3DV, ACCV, NeurIPS, TOG
         </BioSection>
       </Section>
+
+      <Heading
+        onClick={() => setShowMap(!showMap)}
+        display="flex"
+        cursor="pointer"
+        variant="hidden-component"
+      >
+        Traveled countries
+        {showMap ? <ChevronUpIcon /> : <ChevronDownIcon />}
+      </Heading>
+      <Collapse in={showMap} animateOpacity align="center">
+        <iframe src="https://visitedplaces.com/embed/?map=world&projection=geoOrthographic&position=3.5_130.1_36.3_-133.3_-35.8&theme=dark-yellow&width=594&height=435&water=1&graticule=1&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=KR&places=~US_CA_GB_FR_NL_CH_CZ_IT_DE_CN_JP_TH_KH_LA_AU_MY" style={{width: "70%", height: "250px"}}></iframe>
+      </Collapse>
 
       <Box align="center" h="5em">
       </Box>

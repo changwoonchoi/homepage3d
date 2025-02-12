@@ -79,7 +79,7 @@ const Home = () => {
           I received my Bacheler&apos;s degree also in Electrical and Computer Engineering from Seoul National University.
           I was a resesarch intern at {' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
-            NAVER Cloud (CLOVA)
+            NAVER Cloud
           </Link>
           .
         </Paragraph>
@@ -88,7 +88,7 @@ const Home = () => {
           I love to discover and formulate new research problems, especially paractical and challenging ones.
         </Paragraph>
         <Paragraph>
-          I am always open to new opportunities and collaborations! Please feel free to contact me if you are interested in my research. <i> I am currently looking for a research internship. </i>
+          I am always open to new opportunities and collaborations! Please feel free to contact me if you are interested in my research.
         </Paragraph>
         <Paragraph>
         </Paragraph>

@@ -37,7 +37,7 @@ const Home = () => {
           <Heading as="h2" variant="page-title">
             Changwoon Choi
           </Heading>
-          <p><b>Ph.D. Student</b> <br/>3D Computer Vision, Neural Rendering</p>
+          <p><b>Ph.D. Student</b> <br/>Seoul National University</p>
         </Box>
         <Box
           flexShrink={0}
@@ -71,23 +71,22 @@ const Home = () => {
           About me
         </Heading>
         <Paragraph>
-          I&apos;m Ph.D. student at Seoul National University, majoring in Electrical and Computer Engineering, advised by Prof.{' '}
+          I&apos;m a PhD student at Seoul National University ECE department, advised by Prof.{' '}
           <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false}>
             Young Min Kim
           </Link>
           .
-          I received my Bacheler&apos;s degree also in Electrical and Computer Engineering from Seoul National University.
-          I was a resesarch intern at {' '}
+          My research is focused on 3D computer vision and graphics.
+          During my PhD, I visited {' '}
+          <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
+            UCSD 
+          </Link>
+          &nbsp;as a visiting graduate student. And I was a research intern in {' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
             NAVER Cloud
           </Link>
           .
-        </Paragraph>
-        <Paragraph>
-          My research goal is to capture, reconstruct, visualize, and manipulate the 4D real-world.
-          I love to discover and formulate new research problems, especially paractical and challenging ones.
-        </Paragraph>
-        <Paragraph>
+          Prior to that, I obtained my Bacheler&apos;s degree from Seoul National University.
           I am always open to new opportunities and collaborations! Please feel free to contact me if you are interested in my research.
         </Paragraph>
         <Paragraph>

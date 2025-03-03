@@ -112,11 +112,11 @@ const Home = () => {
         </Heading>
         <BioSection>
           <BioYear>2025.02</BioYear>
-          I'll join {' '}
+          I&apos;ll join {' '}
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
             Meta Reality Labs
           </Link>
-          &nbsp;in Zurich as a research scientist intern!
+          &nbsp;in Z&uuml;rich as a research scientist intern!
         </BioSection>
         <BioSection>
           <BioYear>2025.01</BioYear>

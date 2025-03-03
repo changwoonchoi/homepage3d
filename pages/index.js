@@ -20,6 +20,7 @@ import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoGithub, IoMailUnread, IoDocumentAttach, IoSchool } from 'react-icons/io5'
 import Image from 'next/image'
+import LogoBanner from '../components/logobanner'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -104,10 +105,19 @@ const Home = () => {
         </Box>
       </Section>
 
+
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           News
         </Heading>
+        <BioSection>
+          <BioYear>2025.02</BioYear>
+          I'll join {' '}
+          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
+            Meta Reality Labs
+          </Link>
+          &nbsp;in Zurich as a research scientist intern!
+        </BioSection>
         <BioSection>
           <BioYear>2025.01</BioYear>
           I received a SNU INMC Young Researcher Award!
@@ -115,7 +125,7 @@ const Home = () => {
         <BioSection>
           <BioYear>2024.12</BioYear>
           Check our new arXiv preprint{' '}
-          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false}>
+          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false} target="_blank">
             Humans as a Calibration Pattern
           </Link>
           !
@@ -260,6 +270,7 @@ const Home = () => {
           SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, CVPR, ICCV, ECCV, 3DV, ACCV, NeurIPS, TOG
         </BioSection>
       </Section>
+      <LogoBanner />
 
       <Heading
         onClick={() => setShowMap(!showMap)}

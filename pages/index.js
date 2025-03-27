@@ -109,13 +109,18 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2025.03</BioYear>
+          <Link as={NextLink} href="https://jaeah.me/liv3stroke_web" passHref scroll={false} target="_blank">Liv3Stroke</Link>
+          &nbsp;has been accepted to CVPR 2025!
+        </BioSection>
+        <BioSection>
           <BioYear>2025.01</BioYear>
           I received a SNU INMC Young Researcher Award!
         </BioSection>
         <BioSection>
           <BioYear>2024.12</BioYear>
           Check our new arXiv preprint{' '}
-          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false}>
+          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false} target="_blank">
             Humans as a Calibration Pattern
           </Link>
           !

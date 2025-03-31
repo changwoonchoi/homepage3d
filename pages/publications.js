@@ -15,6 +15,7 @@ import thumbCTM from '../public/images/publications/ctm_lowres.gif'
 import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
+import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
 // import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
@@ -25,6 +26,21 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
+        <Section>
+          <PubGridItem
+            id="Liv3Stroke"
+            title="Recovering Dynamic 3D Sketches from Videos"
+            thumbnail={thumbLiv3Stroke}
+            journal="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025"
+            project_page="https://jaeah.me/liv3stroke_web/"
+            author=<p>Jaeah Lee, <b>Changwoon Choi</b>, Young Min Kim, Jaesik Park</p>
+            paper="https://arxiv.org/pdf/2503.20321"
+            video="none"
+            code="none"
+            slides="none"
+          >
+          </PubGridItem>
+        </Section>
         <Section>
           <PubGridItem
             id="I2SLAM"

@@ -111,6 +111,11 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2025.03</BioYear>
+          <Link as={NextLink} href="https://jaeah.me/liv3stroke_web" passHref scroll={false} target="_blank">Liv3Stroke</Link>
+          &nbsp;has been accepted to CVPR 2025!
+        </BioSection>
+        <BioSection>
           <BioYear>2025.02</BioYear>
           I&apos;ll join {' '}
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">

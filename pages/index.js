@@ -80,7 +80,7 @@ const Home = () => {
           My research is focused on 3D computer vision and graphics.
           During my PhD, I visited {' '}
           <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
-            UCSD 
+            UCSD
           </Link>
           &nbsp;as a visiting graduate student. And I was a research intern in {' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
@@ -111,6 +111,13 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2025.04</BioYear>
+          I&apos;ll give a talk on Career Discovery Day at Seoul Science High School, where I graduated 11 years ago!&nbsp;
+          <Link as={NextLink} href="" target="_blank">
+          Slide
+          </Link>
+        </BioSection>
+        <BioSection>
           <BioYear>2025.03</BioYear>
           <Link as={NextLink} href="https://jaeah.me/liv3stroke_web" passHref scroll={false} target="_blank">Liv3Stroke</Link>
           &nbsp;has been accepted to CVPR 2025!
@@ -121,7 +128,7 @@ const Home = () => {
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
             Meta Reality Labs
           </Link>
-          &nbsp;in Z&uuml;rich as a research scientist intern!
+          &nbsp;in <s>Z&uuml;rich</s> London as a research scientist intern!
         </BioSection>
         <BioSection>
           <BioYear>2025.01</BioYear>

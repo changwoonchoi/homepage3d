@@ -112,23 +112,20 @@ const Home = () => {
         </Heading>
         <BioSection>
           <BioYear>2025.04</BioYear>
-          I&apos;ll give a talk on Career Discovery Day at Seoul Science High School, where I graduated 11 years ago!&nbsp;
-          <Link as={NextLink} href="" target="_blank">
-          Slide
+          I&apos;ll be joining {' '}
+          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
+            Meta Reality Labs
           </Link>
+          &nbsp;in <s>Z&uuml;rich (thanks to excellent Visa system)</s> London as a research scientist intern!
+        </BioSection>
+        <BioSection>
+          <BioYear>2025.04</BioYear>
+          I gave a talk at Seoul Science High School, where I graduated 11 years ago!
         </BioSection>
         <BioSection>
           <BioYear>2025.03</BioYear>
           <Link as={NextLink} href="https://jaeah.me/liv3stroke_web" passHref scroll={false} target="_blank">Liv3Stroke</Link>
           &nbsp;has been accepted to CVPR 2025!
-        </BioSection>
-        <BioSection>
-          <BioYear>2025.02</BioYear>
-          I&apos;ll join {' '}
-          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
-            Meta Reality Labs
-          </Link>
-          &nbsp;in <s>Z&uuml;rich</s> London as a research scientist intern!
         </BioSection>
         <BioSection>
           <BioYear>2025.01</BioYear>

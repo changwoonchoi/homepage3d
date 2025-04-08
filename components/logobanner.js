@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 
 const logos = [
   { src: '/images/logos/SNU_merged.svg', alt: 'SNU type', width: "200px", minW: "200px", link: "https://www.snu.ac.kr" },
-  { src: '/images/logos/3dv_logo.png', alt: '3DV Logo', width: "120px", minW: "120px", link: "https://www.3d.snu.ac.kr" },
+  { src: '/images/logos/3dv_logo.png', alt: '3DV Logo', width: "120px", minW: "120px", link: "https:/3d.snu.ac.kr" },
   { src: '/images/logos/UCSD.png', alt: 'UCSD', width: "180px", minW: "180px", link: "https://ucsd.edu/" },
   { src: '/images/logos/NAVER_green_stack.png', alt: 'NAVER Cloud', width: "100px", minW: "100px", link:"https://www.navercloudcorp.com/" },
   { src: '/images/logos/meta_cropped.svg', alt: 'Meta', width: "160px", minW: "160px", link: "https://about.meta.com/" },
@@ -20,16 +20,26 @@ const marquee = keyframes`
 `;
 
 const LogoBanner = () => {
+  const [isPaused, setIsPaused] = React.useState(false);
+
   return (
-    <Box overflow="hidden" width="100%" py={4} position="relative">
+    <Box
+      overflow="hidden"
+      width="100%"
+      py={4}
+      position="relative"
+      onMouseEnter={() => setIsPaused(true)} // Pause animation on hover
+      onMouseLeave={() => setIsPaused(false)} // Resume animation on mouse leave
+    >
       <Flex
         as="div"
         whiteSpace="nowrap"
         width="fit-content"
         alignItems="center"
-        // justify-content="center"
-        // align-items="center"
-        animation={`${marquee} 40s linear infinite`} // Adjust speed here
+        animation={`${marquee} 40s linear infinite ${isPaused ? 'paused' : 'running'}`} // Control animation state
+        style={{
+          transition: 'animation-play-state 0.3s ease-in-out', // Smooth transition for pause/resume
+        }}
       >
         {/* Duplicate logos for seamless looping */}
         {[...logos, ...logos].map((logo, index) => (

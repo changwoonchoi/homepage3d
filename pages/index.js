@@ -20,6 +20,7 @@ import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoGithub, IoMailUnread, IoDocumentAttach, IoSchool } from 'react-icons/io5'
 import Image from 'next/image'
+import Script from 'next/script'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -280,6 +281,10 @@ const Home = () => {
       </Collapse>
 
       <Box align="center" h="5em">
+      </Box>
+
+      <Box align="center" w="100px">
+        <Script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=525252&w=350&t=tt&d=mHJjURGaKSk-qxc81PhW3l6UikCHcrDESb4MrXHDOZQ&co=f0e7db&cmo=3acc3a&cmn=ff5353&ct=aaaaaa'></Script>
       </Box>
 
 

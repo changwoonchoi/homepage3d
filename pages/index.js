@@ -21,6 +21,7 @@ import Section from '../components/section'
 import { IoLogoGithub, IoMailUnread, IoDocumentAttach, IoSchool } from 'react-icons/io5'
 import Image from 'next/image'
 import Script from 'next/script'
+import LogoBanner from '../components/logobanner'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -80,7 +81,7 @@ const Home = () => {
           My research is focused on 3D computer vision and graphics.
           During my PhD, I visited {' '}
           <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
-            UCSD 
+            UCSD
           </Link>
           &nbsp;as a visiting graduate student. And I was a research intern in {' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
@@ -105,10 +106,23 @@ const Home = () => {
         </Box>
       </Section>
 
+
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           News
         </Heading>
+        <BioSection>
+          <BioYear>2025.04</BioYear>
+          I&apos;ll be joining {' '}
+          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
+            Meta Reality Labs
+          </Link>
+          &nbsp;in <s>Z&uuml;rich</s> London as a research scientist intern!
+        </BioSection>
+        <BioSection>
+          <BioYear>2025.04</BioYear>
+          I gave a talk at Seoul Science High School, where I graduated 11 years ago!
+        </BioSection>
         <BioSection>
           <BioYear>2025.03</BioYear>
           <Link as={NextLink} href="https://jaeah.me/liv3stroke_web" passHref scroll={false} target="_blank">Liv3Stroke</Link>
@@ -266,6 +280,7 @@ const Home = () => {
           SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, CVPR, ICCV, ECCV, 3DV, ACCV, NeurIPS, TOG
         </BioSection>
       </Section>
+      <LogoBanner />
 
       <Heading
         onClick={() => setShowMap(!showMap)}

@@ -20,7 +20,7 @@ import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoGithub, IoMailUnread, IoDocumentAttach, IoSchool } from 'react-icons/io5'
 import Image from 'next/image'
-import Script from 'next/script'
+// import Script from 'next/script'
 import LogoBanner from '../components/logobanner'
 
 const ProfileImage = chakra(Image, {

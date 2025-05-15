@@ -112,7 +112,7 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
-          <BioYear>2025.04</BioYear>
+          <BioYear>2025.05</BioYear>
           I&apos;ll be joining {' '}
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
             Meta Reality Labs
@@ -121,7 +121,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>2025.04</BioYear>
-          I gave a talk at Seoul Science High School, where I graduated 11 years ago!
+          I gave a talk at Seoul Science High School, from which I graduated 11 years ago!
         </BioSection>
         <BioSection>
           <BioYear>2025.03</BioYear>
@@ -298,9 +298,6 @@ const Home = () => {
       <Box align="center" h="5em">
       </Box>
 
-      <Box align="center" w="100px">
-        <Script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=525252&w=350&t=tt&d=mHJjURGaKSk-qxc81PhW3l6UikCHcrDESb4MrXHDOZQ&co=f0e7db&cmo=3acc3a&cmn=ff5353&ct=aaaaaa'></Script>
-      </Box>
 
 
     </Container>

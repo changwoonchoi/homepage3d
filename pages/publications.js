@@ -36,7 +36,7 @@ const Publications = () => (
             author=<p>Jaeah Lee, <b>Changwoon Choi</b>, Young Min Kim, Jaesik Park</p>
             paper="https://arxiv.org/pdf/2503.20321"
             video="none"
-            code="none"
+            code="https://github.com/hayanz/Liv3Stroke"
             slides="none"
           >
           </PubGridItem>

@@ -117,7 +117,7 @@ const Home = () => {
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
             Meta Reality Labs
           </Link>
-          &nbsp;in <s>Z&uuml;rich</s> London as a research scientist intern!
+          &nbsp;in London as a research scientist intern!
         </BioSection>
         <BioSection>
           <BioYear>2025.04</BioYear>

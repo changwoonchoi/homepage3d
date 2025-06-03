@@ -35,7 +35,7 @@ const Publications = () => (
             project_page="https://jaeah.me/liv3stroke_web/"
             author=<p>Jaeah Lee, <b>Changwoon Choi</b>, Young Min Kim, Jaesik Park</p>
             paper="https://arxiv.org/pdf/2503.20321"
-            video="none"
+            video="https://youtu.be/kN9fyoDaMTI?si=tvfAycFv1CLLUbtz"
             code="https://github.com/hayanz/Liv3Stroke"
             slides="none"
           >

@@ -276,6 +276,13 @@ const Home = () => {
           </Link>
         </BioSection>
         <BioSection>
+          <BioYear>2025.06 - </BioYear>
+          Research Scientist Intern, {' '}
+          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
+            Meta Reality Labs
+          </Link>
+        </BioSection>
+        <BioSection>
           <BioYear>Reviewer</BioYear>
           SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, CVPR, ICCV, ECCV, 3DV, ACCV, NeurIPS, TOG
         </BioSection>

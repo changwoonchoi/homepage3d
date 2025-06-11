@@ -237,19 +237,19 @@ const Home = () => {
           Education
         </Heading>
         <BioSection>
-          <BioYear>2011.03 - 2014.02</BioYear>
-          Seoul Science High School
+          <BioYear>2020.09 - Present</BioYear>
+          M.S./Ph.D., Seoul National University, ECE, advised by {' '}
+          <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false} target="_blank">
+            Young Min Kim
+          </Link>
         </BioSection>
         <BioSection>
           <BioYear>2014.03 - 2020.08</BioYear>
           B.S., Seoul National University, ECE
         </BioSection>
         <BioSection>
-          <BioYear>2020.09 - Present</BioYear>
-          M.S./Ph.D., Seoul National University, ECE, advised by {' '}
-          <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false} target="_blank">
-            Young Min Kim
-          </Link>
+          <BioYear>2011.03 - 2014.02</BioYear>
+          Seoul Science High School
         </BioSection>
       </Section>
 

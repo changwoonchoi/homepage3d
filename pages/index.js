@@ -258,14 +258,10 @@ const Home = () => {
           Experience
         </Heading>
         <BioSection>
-          <BioYear>2016.09 - 2018.09</BioYear>
-          ROK Air Force (Operations Command)
-        </BioSection>
-        <BioSection>
-          <BioYear>2023.05 - 2023.12</BioYear>
-          Visiting Graduate Student, University of California, San Diego, hosted by {' '}
-          <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
-            Hao Su
+          <BioYear>2025.06 - </BioYear>
+          Research Scientist Intern, {' '}
+          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
+            Meta Reality Labs
           </Link>
         </BioSection>
         <BioSection>
@@ -276,11 +272,15 @@ const Home = () => {
           </Link>
         </BioSection>
         <BioSection>
-          <BioYear>2025.06 - </BioYear>
-          Research Scientist Intern, {' '}
-          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
-            Meta Reality Labs
+          <BioYear>2023.05 - 2023.12</BioYear>
+          Visiting Graduate Student, University of California, San Diego, hosted by {' '}
+          <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
+            Hao Su
           </Link>
+        </BioSection>
+        <BioSection>
+          <BioYear>2016.09 - 2018.09</BioYear>
+          ROK Air Force Operations Command (Mandatory Military Service)
         </BioSection>
         <BioSection>
           <BioYear>Reviewer</BioYear>

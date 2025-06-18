@@ -34,7 +34,7 @@ const Publications = () => (
             journal="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025"
             project_page="https://jaeah.me/liv3stroke_web/"
             author=<p>Jaeah Lee, <b>Changwoon Choi</b>, Young Min Kim, Jaesik Park</p>
-            paper="https://arxiv.org/pdf/2503.20321"
+            paper="https://openaccess.thecvf.com/content/CVPR2025/html/Lee_Recovering_Dynamic_3D_Sketches_from_Videos_CVPR_2025_paper.html"
             video="https://youtu.be/kN9fyoDaMTI?si=tvfAycFv1CLLUbtz"
             code="https://github.com/hayanz/Liv3Stroke"
             slides="none"

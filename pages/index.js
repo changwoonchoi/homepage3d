@@ -78,20 +78,30 @@ const Home = () => {
             Young Min Kim
           </Link>
           .
-          My research is focused on 3D computer vision and graphics.
-          During my PhD, I visited {' '}
+          Currently, I&apos;m a research scientist intern at {' '}
+          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
+            Meta Reality Labs
+          </Link>
+          .
+          During my PhD, I was fortunate to visit {' '}
           <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
             UCSD
           </Link>
-          &nbsp;as a visiting graduate student. And I was a research intern in {' '}
+          &nbsp;and {' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
             NAVER Cloud
           </Link>
-          .
+          &nbsp;as a visiting graduate student and a research intern, respectively.
           Prior to that, I obtained my Bacheler&apos;s degree from Seoul National University.
-          I am always open to new opportunities and collaborations! Please feel free to contact me if you are interested in my research.
         </Paragraph>
+        <Box height="0.3em"></Box>
         <Paragraph>
+          My research is focused on 3D computer vision and graphics.
+          Recently, I have been working on 3D reconstruction and neural rendering, ranging from photorealistic reconstruction to more conceptual and abstract representations.
+        </Paragraph>
+        <Box height="0.3em"></Box>
+        <Paragraph>
+          I am always open to new opportunities and collaborations! Please feel free to contact me if you are interested in my research.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -262,6 +272,10 @@ const Home = () => {
           Research Scientist Intern, {' '}
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
             Meta Reality Labs
+          </Link>
+          , hosted by {' '}
+          <Link as={NextLink} href="https://thodan.github.io/" passHref scroll={false} target="_blank">
+            Tomas Hodan
           </Link>
         </BioSection>
         <BioSection>

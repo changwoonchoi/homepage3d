@@ -16,7 +16,7 @@ import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
 import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
-// import placeholder from '../public/images/publications/soon.png'
+import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -26,6 +26,21 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
+        <Section>
+          <PubGridItem
+            id="HCP"
+            title="Humans as a Calibration Pattern: Dynamic 3D Scene Reconstruction from Unsynchronized and Uncalibrated Videos"
+            thumbnail={placeholder}
+            journal="International Conference on Computer Vision (ICCV), 2025"
+            project_page="https://changwoonchoi.github.io/HCP"
+            author=<p><b>Changwoon Choi</b>, Jeongjun Kim, Geonho Cha, Minkwan Kim, Dongyoon Wee, Young Min Kim</p>
+            paper="https://arxiv.org/abs/2412.19089"
+            video="none"
+            code="https://github.com/changwoonchoi/HCP"
+            slides="none"
+          >
+          </PubGridItem>
+        </Section>
         <Section>
           <PubGridItem
             id="Liv3Stroke"

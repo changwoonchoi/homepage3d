@@ -122,6 +122,11 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2025.06</BioYear>
+          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false} target="_blank">Humans as a Calibration Pattern</Link>
+          &nbsp;has been accepted to ICCV 2025!
+        </BioSection>
+        <BioSection>
           <BioYear>2025.05</BioYear>
           I&apos;ll be joining {' '}
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">

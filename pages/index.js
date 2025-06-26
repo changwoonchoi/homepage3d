@@ -147,14 +147,6 @@ const Home = () => {
           <BioYear>2025.01</BioYear>
           I received a SNU INMC Young Researcher Award!
         </BioSection>
-        <BioSection>
-          <BioYear>2024.12</BioYear>
-          Check our new arXiv preprint{' '}
-          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false} target="_blank">
-            Humans as a Calibration Pattern
-          </Link>
-          !
-        </BioSection>
       </Section>
       <Section delay={0.3}>
         <Heading

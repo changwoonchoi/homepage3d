@@ -9,6 +9,9 @@
     "prettier": "prettier --write .",
     "lint": "next lint"
   },
+  "engines": {
+     "node": "22.x"
+  },
   "keywords": [],
   "author": "Changwoon Choi",
   "license": "MIT",

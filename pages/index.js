@@ -310,7 +310,7 @@ const Home = () => {
         {showMap ? <ChevronUpIcon /> : <ChevronDownIcon />}
       </Heading>
       <Collapse in={showMap} animateOpacity align="center">
-        <iframe src="https://visitedplaces.com/embed/?map=world&projection=geoOrthographic&position=3.5_130.1_36.3_-133.3_-35.8&theme=dark-yellow&width=594&height=435&water=1&graticule=1&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=KR&places=~US_CA_GB_FR_NL_CH_CZ_IT_DE_CN_JP_TH_KH_LA_AU_MY" style={{width: "70%", height: "250px"}}></iframe>
+        <iframe src="https://visitedplaces.com/embed/?map=world&projection=geoOrthographic&position=3.5_130.1_36.3_-133.3_-35.8&theme=dark-yellow&width=594&height=435&water=1&graticule=1&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=KR&places=~US_CA_GB_FR_NL_CH_CZ_IT_DE_CN_JP_TH_KH_LA_AU_MY_BE" style={{width: "70%", height: "250px"}}></iframe>
       </Collapse>
 
       <Box align="center" h="2em">

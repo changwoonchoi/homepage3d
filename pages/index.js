@@ -78,20 +78,20 @@ const Home = () => {
             Young Min Kim
           </Link>
           .
-          Currently, I&apos;m a research scientist intern at {' '}
+          Recently, I was a research scientist intern at {' '}
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
             Meta Reality Labs
           </Link>
           .
-          During my PhD, I was fortunate to visit {' '}
+          Before that, I visited {' '}
           <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
             UCSD
           </Link>
-          &nbsp;and {' '}
+          &nbsp;and worked as a research intern at{' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
             NAVER Cloud
           </Link>
-          &nbsp;as a visiting graduate student and a research intern, respectively.
+          &nbsp;during my PhD.
           Prior to that, I obtained my Bacheler&apos;s degree from Seoul National University.
         </Paragraph>
         <Box height="0.3em"></Box>
@@ -265,7 +265,7 @@ const Home = () => {
           Experience
         </Heading>
         <BioSection>
-          <BioYear>2025.06 - </BioYear>
+          <BioYear>2025.06 - 2025.12</BioYear>
           Research Scientist Intern, {' '}
           <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
             Meta Reality Labs
@@ -295,7 +295,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>Reviewer</BioYear>
-          SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, TOG, TVCG, CVPR, ICCV, ECCV, 3DV, WACV, ACCV, NeurIPS
+          SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, TOG, TVCG, CGF, CVPR, ICCV, ECCV, 3DV, WACV, ACCV, NeurIPS
         </BioSection>
       </Section>
       <LogoBanner />

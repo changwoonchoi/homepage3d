@@ -92,7 +92,7 @@ const Home = () => {
             NAVER Cloud
           </Link>
           &nbsp;during my PhD.
-          Prior to that, I obtained my Bacheler&apos;s degree from Seoul National University.
+          I obtained my Bacheler&apos;s degree from Seoul National University.
         </Paragraph>
         <Box height="0.3em"></Box>
         <Paragraph>

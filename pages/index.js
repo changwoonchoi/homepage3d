@@ -193,7 +193,7 @@ const Home = () => {
         </Heading>
         <List>
           <ListItem>
-            <Link href="mailto: changwoon.choi00@gmail.com" target="_blank">
+            <Link href="mailto: hello@changwoon.info" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"

@@ -122,30 +122,19 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2026.01</BioYear>
+          I&apos;m attending IPIU. See you at Jeju!
+        </BioSection>
+        <BioSection>
+          <BioYear>2025.11</BioYear>
+          I gave a talk at&nbsp;
+          <Link as={NextLink} href="https://studios.disneyresearch.com/" passHref scroll={false} target="_blank">Disney Research|Studios</Link>
+          !
+        </BioSection>
+        <BioSection>
           <BioYear>2025.06</BioYear>
           <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false} target="_blank">Humans as a Calibration Pattern</Link>
           &nbsp;has been accepted to ICCV 2025!
-        </BioSection>
-        <BioSection>
-          <BioYear>2025.05</BioYear>
-          I&apos;ll be joining {' '}
-          <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
-            Meta Reality Labs
-          </Link>
-          &nbsp;in London as a research scientist intern!
-        </BioSection>
-        <BioSection>
-          <BioYear>2025.04</BioYear>
-          I gave a talk at Seoul Science High School, from which I graduated 11 years ago!
-        </BioSection>
-        <BioSection>
-          <BioYear>2025.03</BioYear>
-          <Link as={NextLink} href="https://jaeah.me/liv3stroke_web" passHref scroll={false} target="_blank">Liv3Stroke</Link>
-          &nbsp;has been accepted to CVPR 2025!
-        </BioSection>
-        <BioSection>
-          <BioYear>2025.01</BioYear>
-          I received a SNU INMC Young Researcher Award!
         </BioSection>
       </Section>
       <Section delay={0.3}>
@@ -160,6 +149,27 @@ const Home = () => {
           {showOldNews ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </Heading>
         <Collapse in={showOldNews} animateOpacity>
+          <BioSection>
+            <BioYear>2025.05</BioYear>
+            I&apos;ll be joining {' '}
+            <Link as={NextLink} href="https://about.meta.com/realitylabs/" passHref scroll={false} target="_blank">
+              Meta Reality Labs
+            </Link>
+            &nbsp;in London as a research scientist intern!
+          </BioSection>
+          <BioSection>
+            <BioYear>2025.04</BioYear>
+            I gave a talk at Seoul Science High School, from which I graduated 11 years ago!
+          </BioSection>
+          <BioSection>
+            <BioYear>2025.03</BioYear>
+            <Link as={NextLink} href="https://jaeah.me/liv3stroke_web" passHref scroll={false} target="_blank">Liv3Stroke</Link>
+            &nbsp;has been accepted to CVPR 2025!
+          </BioSection>
+          <BioSection>
+            <BioYear>2025.01</BioYear>
+            I received a SNU INMC Young Researcher Award!
+          </BioSection>
           <BioSection>
             <BioYear>2024.10</BioYear>
             I&apos;m attending ECCV 2024. See you at Milano!

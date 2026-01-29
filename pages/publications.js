@@ -16,7 +16,7 @@ import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
 import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
-//import placeholder from '../public/images/publications/soon.png'
+import placeholder from '../public/images/publications/soon.png'
 import thumbHCP from '../public/images/publications/hcp_compressed.gif'
 
 const Publications = () => (
@@ -27,6 +27,21 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
+        <Section>
+          <PubGridItem
+            id="probe_optim"
+            title="Geometry-Aware Scene Configurations for Novel View Synthesis"
+            thumbnail={placeholder}
+            journal="IEEE Conference on Virtual Reality and 3D User Interfaces (VR) Posters, 2026"
+            project_page="none"
+            author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>
+            paper="none"
+            video="none"
+            code="none"
+            slides="none"
+          >
+          </PubGridItem>
+        </Section>
         <Section>
           <PubGridItem
             id="HCP"

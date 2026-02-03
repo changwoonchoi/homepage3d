@@ -123,6 +123,10 @@ const Home = () => {
         </Heading>
         <BioSection>
           <BioYear>2026.01</BioYear>
+          A paper about geometry and observation-aware 3D scene reconstruction accepted to IEEE VR (poster).
+        </BioSection>
+        <BioSection>
+          <BioYear>2026.01</BioYear>
           I&apos;m attending IPIU. See you at Jeju!
         </BioSection>
         <BioSection>

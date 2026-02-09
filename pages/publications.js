@@ -7,8 +7,8 @@ import thumbGCA from '../public/images/publications/gca.gif'
 import thumbcGCA from '../public/images/publications/cgca.gif'
 import thumbPICCOLO from '../public/images/publications/piccolo.jpg'
 import thumbCPO from '../public/images/publications/cpo.jpg'
-import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
-// import thumbIBLNeRF from '../public/images/publications/IBL-NeRF.gif'
+// import thumbIBLNeRF from '../public/images/publications/ibl-nerf.png'
+import thumbIBLNeRF from '../public/images/publications/IBL-NeRF.gif'
 import thumbEgoNeRF from '../public/images/publications/egonerf_high.gif'
 import thumbLDL from '../public/images/publications/ldl_1.gif'
 import thumbCTM from '../public/images/publications/ctm_lowres.gif'
@@ -16,8 +16,9 @@ import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
 import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
-import placeholder from '../public/images/publications/soon.png'
+// import placeholder from '../public/images/publications/soon.png'
 import thumbHCP from '../public/images/publications/hcp_compressed.gif'
+import thumbProbeOptim from '../public/images/publications/probe_optim.gif'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -31,7 +32,7 @@ const Publications = () => (
           <PubGridItem
             id="probe_optim"
             title="Geometry-Aware Scene Configurations for Novel View Synthesis"
-            thumbnail={placeholder}
+            thumbnail={thumbProbeOptim}
             journal="IEEE Conference on Virtual Reality and 3D User Interfaces (VR) Posters, 2026"
             project_page="none"
             author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>

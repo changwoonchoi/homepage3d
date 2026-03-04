@@ -16,9 +16,10 @@ import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
 import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
-// import placeholder from '../public/images/publications/soon.png'
+import placeholder from '../public/images/publications/soon.png'
 import thumbHCP from '../public/images/publications/hcp_compressed.gif'
 import thumbProbeOptim from '../public/images/publications/probe_optim.gif'
+import thumbGeoStyle from '../public/images/publications/geostyle_teaser.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -30,12 +31,42 @@ const Publications = () => (
       <SimpleGrid columns={{sm:1}} gap={6}>
         <Section>
           <PubGridItem
+            id="geostyle"
+            title="Image-Guided Geometric Stylization of 3D Meshes"
+            thumbnail={thumbGeoStyle}
+            journal="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026"
+            project_page="none"
+            author=<p><b>Changwoon Choi*</b>, Hyunsoo Lee*, Cl&eacute;ment Jambon, Yael Vinker, Young Min Kim<br/><i>(*Equally contributed)</i></p>
+            paper="none"
+            video="none"
+            code="none"
+            slides="none"
+          >
+          </PubGridItem>
+        </Section>
+        <Section>
+          <PubGridItem
             id="probe_optim"
             title="Geometry-Aware Scene Configurations for Novel View Synthesis"
             thumbnail={thumbProbeOptim}
             journal="IEEE Conference on Virtual Reality and 3D User Interfaces (VR) Posters, 2026"
             project_page="none"
             author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>
+            paper="none"
+            video="none"
+            code="none"
+            slides="none"
+          >
+          </PubGridItem>
+        </Section>
+        <Section>
+          <PubGridItem
+            id="excellgen"
+            title="ExCellGen: Fast, Controllable, Photorealistic 3D Scene Generation from a Single Real-World Exemplar"
+            thumbnail={placeholder}
+            journal="Computational Visual Media (CVM) Journal Track, 2026"
+            project_page="none"
+            author=<p>Cl&eacute;ment Jambon, <b>Changwoon Choi</b>, Dongsu Zhang, Olga Sorkine-Hornung, Young Min Kim</p>
             paper="none"
             video="none"
             code="none"

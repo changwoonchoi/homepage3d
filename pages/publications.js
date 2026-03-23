@@ -16,10 +16,11 @@ import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
 import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
-import placeholder from '../public/images/publications/soon.png'
+// import placeholder from '../public/images/publications/soon.png'
 import thumbHCP from '../public/images/publications/hcp_compressed.gif'
 import thumbProbeOptim from '../public/images/publications/probe_optim.gif'
 import thumbGeoStyle from '../public/images/publications/geostyle_teaser.png'
+import thumbExCellGen from '../public/images/publications/excellgen.gif'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -63,13 +64,13 @@ const Publications = () => (
           <PubGridItem
             id="excellgen"
             title="ExCellGen: Fast, Controllable, Photorealistic 3D Scene Generation from a Single Real-World Exemplar"
-            thumbnail={placeholder}
+            thumbnail={thumbExCellGen}
             journal="Computational Visual Media (CVM) Journal Track, 2026"
-            project_page="none"
+            project_page="https://excellgen.github.io/"
             author=<p>Cl&eacute;ment Jambon, <b>Changwoon Choi</b>, Dongsu Zhang, Olga Sorkine-Hornung, Young Min Kim</p>
-            paper="none"
+            paper="https://arxiv.org/abs/2412.16253"
             video="none"
-            code="none"
+            code="https://github.com/clementjambon/excellgen"
             slides="none"
           >
           </PubGridItem>

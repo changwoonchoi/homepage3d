@@ -51,11 +51,11 @@ const Publications = () => (
             title="Geometry-Aware Scene Configurations for Novel View Synthesis"
             thumbnail={thumbProbeOptim}
             journal="IEEE Conference on Virtual Reality and 3D User Interfaces (VR) Posters, 2026"
-            project_page="none"
+            project_page="https://mkjjang3598.github.io/Geo-Scene-Config/"
             author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>
-            paper="none"
-            video="none"
-            code="none"
+            paper="https://arxiv.org/abs/2510.09880"
+            video="https://www.youtube.com/watch?v=U5001zsHz6w"
+            code="https://github.com/mkjjang3598/Geo-Scene-Config"
             slides="none"
           >
           </PubGridItem>

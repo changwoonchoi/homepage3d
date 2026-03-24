@@ -122,23 +122,18 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2026.03</BioYear>
+          <Link as={NextLink} href="https://excellgen.github.io/" passHref scroll={false} target="_blank">ExCellGen</Link> has been accepted to&nbsp;
+          <Link as={NextLink} href="https://iccvm.org/2026/index.htm" passHref scroll={false} target="_blank">CVM</Link> 
+          &nbsp;as a journal track, see you at Seoul!
+        </BioSection>
+        <BioSection>
           <BioYear>2026.01</BioYear>
           A paper about geometry and observation-aware 3D scene reconstruction accepted to IEEE VR (poster).
         </BioSection>
         <BioSection>
           <BioYear>2026.01</BioYear>
           I&apos;m attending IPIU. See you at Jeju!
-        </BioSection>
-        <BioSection>
-          <BioYear>2025.11</BioYear>
-          I gave a talk at&nbsp;
-          <Link as={NextLink} href="https://studios.disneyresearch.com/" passHref scroll={false} target="_blank">Disney Research|Studios</Link>
-          !
-        </BioSection>
-        <BioSection>
-          <BioYear>2025.06</BioYear>
-          <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false} target="_blank">Humans as a Calibration Pattern</Link>
-          &nbsp;has been accepted to ICCV 2025!
         </BioSection>
       </Section>
       <Section delay={0.3}>
@@ -153,6 +148,17 @@ const Home = () => {
           {showOldNews ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </Heading>
         <Collapse in={showOldNews} animateOpacity>
+          <BioSection>
+            <BioYear>2025.11</BioYear>
+            I gave a talk at&nbsp;
+            <Link as={NextLink} href="https://studios.disneyresearch.com/" passHref scroll={false} target="_blank">Disney Research|Studios</Link>
+            !
+          </BioSection>
+          <BioSection>
+            <BioYear>2025.06</BioYear>
+            <Link as={NextLink} href="https://changwoonchoi.github.io/HCP" passHref scroll={false} target="_blank">Humans as a Calibration Pattern</Link>
+            &nbsp;has been accepted to ICCV 2025!
+          </BioSection>
           <BioSection>
             <BioYear>2025.05</BioYear>
             I&apos;ll be joining {' '}

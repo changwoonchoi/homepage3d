@@ -18,7 +18,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
-import { IoLogoGithub, IoMailUnread, IoDocumentAttach, IoSchool } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoMailUnread, IoDocumentAttach, IoSchool } from 'react-icons/io5'
 import Image from 'next/image'
 // import Script from 'next/script'
 import LogoBanner from '../components/logobanner'
@@ -253,6 +253,17 @@ const Home = () => {
                 leftIcon={<IoSchool />}
               >
                 Google Scholar
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/changwoon-choi-0bbb311a1/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                LinkedIn
               </Button>
             </Link>
           </ListItem>

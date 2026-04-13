@@ -122,9 +122,14 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2026.04</BioYear>
+          <Link as={NextLink} href="https://excellgen.github.io/" passHref scroll={false} target="_blank">ExCellGen</Link>
+          &nbsp;won an honorable mention award at the CVM conference!
+        </BioSection>
+        <BioSection>
           <BioYear>2026.03</BioYear>
           <Link as={NextLink} href="https://excellgen.github.io/" passHref scroll={false} target="_blank">ExCellGen</Link> has been accepted to&nbsp;
-          <Link as={NextLink} href="https://iccvm.org/2026/index.htm" passHref scroll={false} target="_blank">CVM</Link> 
+          <Link as={NextLink} href="https://iccvm.org/2026/index.htm" passHref scroll={false} target="_blank">CVM</Link>
           &nbsp;as a journal track, see you at Seoul!
         </BioSection>
         <BioSection>

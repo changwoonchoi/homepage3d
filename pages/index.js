@@ -123,6 +123,10 @@ const Home = () => {
         </Heading>
         <BioSection>
           <BioYear>2026.04</BioYear>
+          Selected as a finalist for the <Link as={NextLink} href="https://www.meshy.ai/blog/fellowship-2026#finalists" passHref scroll={false} target="_blank">2026 Meshy Fellowship Program</Link>!
+        </BioSection>
+        <BioSection>
+          <BioYear>2026.04</BioYear>
           <Link as={NextLink} href="https://excellgen.github.io/" passHref scroll={false} target="_blank">ExCellGen</Link>
           &nbsp;won an honorable mention award at the CVM conference!
         </BioSection>

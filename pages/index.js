@@ -123,6 +123,11 @@ const Home = () => {
         </Heading>
         <BioSection>
           <BioYear>2026.04</BioYear>
+          Our <Link as={NextLink} href="https://changwoonchoi.github.io/GeoStyle/" passHref scroll={false} target="_blank">geometric mesh stylization work</Link>
+          &nbsp;has been accepted to CVPR 2026. See you at Denver!
+        </BioSection>
+        <BioSection>
+          <BioYear>2026.04</BioYear>
           Selected as a finalist for the <Link as={NextLink} href="https://www.meshy.ai/blog/fellowship-2026#finalists" passHref scroll={false} target="_blank">2026 Meshy Fellowship Program</Link>!
         </BioSection>
         <BioSection>

@@ -73,7 +73,7 @@ const Home = () => {
           About me
         </Heading>
         <Paragraph>
-          I&apos;m a PhD student at Seoul National University ECE department, advised by Prof.{' '}
+          I&apos;m a <span style={{ color: 'darkred', fontStyle: 'italic', fontWeight: 'bold' }}>final-year</span> PhD student at Seoul National University ECE department, advised by Prof.{' '}
           <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false}>
             Young Min Kim
           </Link>
@@ -101,7 +101,7 @@ const Home = () => {
         </Paragraph>
         <Box height="0.3em"></Box>
         <Paragraph>
-          I am always open to new opportunities and collaborations! Please feel free to contact me if you are interested in my research.
+          I am actively looking for research positions in both industry and postdoc. Please feel free to contact me if you are interested in my research!
         </Paragraph>
         <Box align="center" my={4}>
           <Button

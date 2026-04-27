@@ -73,7 +73,7 @@ const Home = () => {
           About me
         </Heading>
         <Paragraph>
-          I&apos;m a <span style={{ color: 'darkred', fontStyle: 'italic', fontWeight: 'bold' }}>final-year</span> PhD student at Seoul National University ECE department, advised by Prof.{' '}
+          I&apos;m a <span style={{ color: 'darkred', fontStyle: 'italic'}}>final-year</span> PhD student in the ECE department at Seoul National University, advised by Prof.{' '}
           <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false}>
             Young Min Kim
           </Link>
@@ -83,25 +83,25 @@ const Home = () => {
             Meta Reality Labs
           </Link>
           .
-          Before that, I visited {' '}
+          Prior to this, I was a visiting researcher at {' '}
           <Link as={NextLink} href="https://cseweb.ucsd.edu/~haosu/" passHref scroll={false} target="_blank">
             UCSD
           </Link>
-          &nbsp;and worked as a research intern at{' '}
+          &nbsp;and a research intern at{' '}
           <Link as={NextLink} href="https://www.navercloudcorp.com/" passHref scroll={false} target="_blank">
             NAVER Cloud
           </Link>
-          &nbsp;during my PhD.
-          I obtained my Bacheler&apos;s degree from Seoul National University.
+          &nbsp;.
+          I also obtained my Bachelor&apos;s degree from Seoul National University.
         </Paragraph>
         <Box height="0.3em"></Box>
         <Paragraph>
           My research is focused on 3D computer vision and graphics.
-          Recently, I have been working on 3D reconstruction and neural rendering, ranging from photorealistic reconstruction to more conceptual and abstract representations.
+          Currently, I am working on 3D reconstruction and neural rendering, ranging from photorealistic reconstruction to more conceptual and abstract representations.
         </Paragraph>
         <Box height="0.3em"></Box>
         <Paragraph>
-          I am actively looking for research positions in both industry and postdoc. Please feel free to contact me if you are interested in my research!
+          I am actively seeking both industry research roles or academic postdoc positions. Please feel free to reach out if you are interested in my work or potential collaborations!
         </Paragraph>
         <Box align="center" my={4}>
           <Button

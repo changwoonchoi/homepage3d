@@ -50,7 +50,7 @@ const Publications = () => (
             id="probe_optim"
             title="Geometry-Aware Scene Configurations for Novel View Synthesis"
             thumbnail={thumbProbeOptim}
-            journal="IEEE Conference on Virtual Reality and 3D User Interfaces (VR) Posters, 2026"
+            journal="IEEE Transactions on Visualization and Computer Graphics, 2026"
             project_page="https://mkjjang3598.github.io/Geo-Scene-Config/"
             author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>
             paper="https://arxiv.org/abs/2510.09880"

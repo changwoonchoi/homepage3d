@@ -24,7 +24,7 @@ import thumbExCellGen from '../public/images/publications/excellgen.gif'
 
 const Publications = () => (
   <Layout title="Publications">
-    <Container>
+    <Container maxW="100%">
       <Heading as="h3" fontSize={20} mb={4}>
         Publications
       </Heading>
@@ -50,7 +50,7 @@ const Publications = () => (
             id="probe_optim"
             title="Geometry-Aware Scene Configurations for Novel View Synthesis"
             thumbnail={thumbProbeOptim}
-            journal="IEEE Transactions on Visualization and Computer Graphics, 2026"
+            journal={"IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026\nAlso presented at IEEE VR 2026 (poster)"}
             project_page="https://mkjjang3598.github.io/Geo-Scene-Config/"
             author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>
             paper="https://arxiv.org/abs/2510.09880"
@@ -65,7 +65,7 @@ const Publications = () => (
             id="excellgen"
             title="ExCellGen: Fast, Controllable, Photorealistic 3D Scene Generation from a Single Real-World Exemplar"
             thumbnail={thumbExCellGen}
-            journal="Computational Visual Media (CVM) Journal Track, 2026"
+            journal="Computational Visual Media (CVM) 2026, Journal Track, Best Paper Honorable Mention"
             project_page="https://excellgen.github.io/"
             author=<p>Cl&eacute;ment Jambon, <b>Changwoon Choi</b>, Dongsu Zhang, Olga Sorkine-Hornung, Young Min Kim</p>
             paper="https://arxiv.org/abs/2412.16253"
@@ -80,7 +80,7 @@ const Publications = () => (
             id="HCP"
             title="Humans as a Calibration Pattern: Dynamic 3D Scene Reconstruction from Unsynchronized and Uncalibrated Videos"
             thumbnail={thumbHCP}
-            journal="International Conference on Computer Vision (ICCV), 2025"
+            journal={"International Conference on Computer Vision (ICCV), 2025\nAlso presented at the 2nd Dense Neural SLAM Workshop (NeuSLAM) in ICCV 2025 (Nectar track)"}
             project_page="https://changwoonchoi.github.io/HCP"
             author=<p><b>Changwoon Choi</b>, Jeongjun Kim, Geonho Cha, Minkwan Kim, Dongyoon Wee, Young Min Kim</p>
             paper="https://arxiv.org/abs/2412.19089"
@@ -110,7 +110,7 @@ const Publications = () => (
             id="I2SLAM"
             title=<p><i>I<sup>2</sup></i>-SLAM: Inverting Imaging Process for Robust Photorealistic Dense SLAM</p>
             thumbnail={thumbI2SLAM}
-            journal="European Conference Computer Vision (ECCV), 2024"
+            journal={"European Conference Computer Vision (ECCV), 2024\nAlso presented at the 1st Dense Neural SLAM Workshop (NeuSLAM) in ECCV 2024"}
             project_page="https://changwoonchoi.github.io/i2slam/"
             author=<p>Gwangtak Bae*, <b>Changwoon Choi*</b>, Hyeongjun Heo, Sang Min Kim, Young Min Kim<br/><i>(*Equally contributed)</i></p>
             paper="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03857.pdf"
@@ -226,7 +226,7 @@ const Publications = () => (
             // id="cGCA"
             title="Probabilistic Implicit Scene Completion"
             thumbnail={thumbcGCA}
-            journal="International Conference on Learning Representations (ICLR), 2022"
+            journal="International Conference on Learning Representations (ICLR), 2022, Spotlight"
             author=<p>Dongsu Zhang, <b>Changwoon Choi</b>, Inbum Park, Young Min Kim</p>
             project_page="none"
             paper="https://openreview.net/forum?id=BnQhMqDfcKG"

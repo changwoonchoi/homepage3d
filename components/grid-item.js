@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, Link, LinkBox, LinkOverlay, SimpleGrid } from '@chakra-ui/react'
+import { Box, Text, Link, LinkBox, LinkOverlay, SimpleGrid, Grid } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 var make_link = function (url, text, slash) {
@@ -104,42 +104,54 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
 // )
 
 export const PubGridItem = ({ title, thumbnail, journal, author, project_page, paper, video, code }) => (
-  <SimpleGrid columns={{sm: 1, md: 4}} gap={4}>
-    <Box w={{sm:"100%", md: "100%"}} textAlign="center">
+  <Grid templateColumns={{ sm: '1fr', md: '200px 1fr' }} gap={6} alignItems="center">
+    <Box w="100%" textAlign="center">
       <Image
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
       />
     </Box>
-    <Box w={{sm: "100%", md: "300%"}} textAlign="left">
+    <Box w="100%" textAlign="left">
       <Text mt={2} fontSize={20}>
         {title}
       </Text>
       <Text fontSize={14}>
         {author}
       </Text>
-      <Text fontSize={14} color="grey" fontStyle="italic">
+      <Text fontSize={14} color="grey" fontStyle="italic" whiteSpace="pre-line">
         {journal}
       </Text>
-      {make_link (`${project_page}`, "project page", true)}
-      {make_link (`${paper}`, "paper", true)} 
-      {make_link (`${video}`, "video", true)} 
-      {make_link (`${code}`, "code", false) }
+      <Box mt={1}>
+        {[
+          { url: project_page, text: 'project page' },
+          { url: paper, text: 'paper' },
+          { url: video, text: 'video' },
+          { url: code, text: 'code' }
+        ]
+          .filter(link => link.url && link.url !== 'none')
+          .map((link, index, arr) => (
+            <Text key={index} fontSize={14} display="inline" whiteSpace="nowrap">
+              {index > 0 && ' '}
+              <Link as={NextLink} href={link.url} target="_blank">{link.text}</Link>
+              {index < arr.length - 1 && ' /'}
+            </Text>
+          ))}
+      </Box>
     </Box>
-  </SimpleGrid>
+  </Grid>
 )
 
 export const PubGridItemLink = ({ id, title, thumbnail, journal, author, project_page, paper, video, code }) => (
-  <SimpleGrid columns={{sm: 1, md: 4}} gap={4}>
-    <Box w={{sm:"100%", md: "100%"}} textAlign="center">
+  <Grid templateColumns={{ sm: '1fr', md: '200px 1fr' }} gap={6} alignItems="center">
+    <Box w="100%" textAlign="center">
       <Image
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
       />
     </Box>
-    <Box w={{sm: "100%", md: "300%"}} textAlign="left">
+    <Box w="100%" textAlign="left">
       <Text mt={2} fontSize={20}>
         {' '}
         <Link as={NextLink} href={`/publications/${id}`} variants="pub_title">
@@ -149,15 +161,27 @@ export const PubGridItemLink = ({ id, title, thumbnail, journal, author, project
       <Text fontSize={14}>
         {author}
       </Text>
-      <Text fontSize={14} color="grey" fontStyle="italic">
+      <Text fontSize={14} color="grey" fontStyle="italic" whiteSpace="pre-line">
         {journal}
       </Text>
-      {make_link (`${project_page}`, "project page", true)}
-      {make_link (`${paper}`, "paper", true)} 
-      {make_link (`${video}`, "video", true)} 
-      {make_link (`${code}`, "code", false) }
+      <Box mt={1}>
+        {[
+          { url: project_page, text: 'project page' },
+          { url: paper, text: 'paper' },
+          { url: video, text: 'video' },
+          { url: code, text: 'code' }
+        ]
+          .filter(link => link.url && link.url !== 'none')
+          .map((link, index, arr) => (
+            <Text key={index} fontSize={14} display="inline" whiteSpace="nowrap">
+              {index > 0 && ' '}
+              <Link as={NextLink} href={link.url} target="_blank">{link.text}</Link>
+              {index < arr.length - 1 && ' /'}
+            </Text>
+          ))}
+      </Box>
     </Box>
-  </SimpleGrid>
+  </Grid>
 )
 
 export const GridItemStyle = () => (

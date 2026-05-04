@@ -1,22 +1,9 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, Link, LinkBox, LinkOverlay, SimpleGrid, Grid } from '@chakra-ui/react'
+import { Box, Text, Link, LinkBox, LinkOverlay, Grid } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-var make_link = function (url, text, slash) {
-  var none="none"
-  if (none.localeCompare(url) == 0) {
-    return ''
-  }
-  if (slash) {
-    // return <><Link as={NextLink} href={url} target="_blank">{text}</Link> / </>
-    return <Text fontSize={14} display="inline"><nobr>{' '}<Link as={NextLink} href={url} target="_blank">{text}</Link> / </nobr></Text>
-  }
-  else {
-    // return <Link as={NextLink} href={url} target="_blank">{text}</Link>
-    return <Text fontSize={14} display="inline">{' '}<Link as={NextLink} href={url} target="_blank">{text}</Link></Text>
-  }
-}
+
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">

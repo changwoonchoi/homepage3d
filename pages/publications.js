@@ -53,7 +53,7 @@ const Publications = () => (
             journal={"IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026\nAlso presented at IEEE VR 2026 (poster)"}
             project_page="https://mkjjang3598.github.io/Geo-Scene-Config/"
             author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>
-            paper="https://arxiv.org/abs/2510.09880"
+            paper="https://ieeexplore.ieee.org/document/11506399"
             video="https://www.youtube.com/watch?v=U5001zsHz6w"
             code="https://github.com/mkjjang3598/Geo-Scene-Config"
             slides="none"

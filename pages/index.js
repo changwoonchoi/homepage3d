@@ -122,6 +122,11 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2026.05</BioYear>
+          Selected as an <Link as={NextLink} href="https://x.com/CVPR/status/2056432742208876945/photo/2" passHref scroll={false} target="_blank">outstanding reviewer</Link> for CVPR 2026!
+        </BioSection>
+
+        <BioSection>
           <BioYear>2026.04</BioYear>
           Our <Link as={NextLink} href="https://changwoonchoi.github.io/GeoStyle/" passHref scroll={false} target="_blank">geometric mesh stylization work</Link>
           &nbsp;has been accepted to CVPR 2026. See you at Denver!

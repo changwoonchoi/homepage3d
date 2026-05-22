@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+     viewBox="550 561 924 924">
+  <defs>
+    <linearGradient id="grad" gradientUnits="userSpaceOnUse"
+        x1="580" y1="1275" x2="1444" y2="772">
+      <stop offset="0%"   stop-color="#0b8fd4"/>
+      <stop offset="100%" stop-color="#e8185c"/>
+    </linearGradient>
+    <clipPath id="cw" clipPathUnits="userSpaceOnUse">
+      <path d="M635 772 H924 V832 H635 Z M580 832 H978 V892 H580 Z M580 892 H730 V952 H580 Z M871 892 H978 V952 H871 Z M580 952 H730 V1074 H580 Z M580 1074 H730 V1131 H580 Z M871 1074 H978 V1131 H871 Z M580 1131 H978 V1191 H580 Z M635 1191 H924 V1276 H635 Z"/>
+      <path d="M1047 772 H1141 V1075 H1047 Z M1351 772 H1445 V1075 H1351 Z M1200 972 H1294 V1075 H1200 Z M1047 1075 H1445 V1155 H1047 Z M1047 1155 H1246 V1220 H1047 Z M1246 1155 H1445 V1220 H1246 Z M1087 1220 H1182 V1276 H1087 Z M1310 1220 H1405 V1276 H1310 Z"/>
+    </clipPath>
+  </defs>
+  <rect x="550" y="561" width="924" height="924"
+        fill="url(#grad)" clip-path="url(#cw)"/>
+</svg>

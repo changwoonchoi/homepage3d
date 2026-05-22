@@ -21,7 +21,8 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Changwoon's homepage" />
         <meta name="author" content="Changwoon Choi" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon_cw.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon_cw.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Changwoon Choi" />
         <meta name="og:title" content="Changwoon Choi" />
         <meta property="og:type" content="website" />

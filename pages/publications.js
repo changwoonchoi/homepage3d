@@ -39,7 +39,7 @@ const Publications = () => (
             project_page="https://changwoonchoi.github.io/GeoStyle/"
             author=<p><b>Changwoon Choi*</b>, Hyunsoo Lee*, Cl&eacute;ment Jambon, Yael Vinker, Young Min Kim<br/><i>(*Equally contributed)</i></p>
             paper="https://arxiv.org/abs/2604.07795"
-            video="none"
+            video="https://github.com/changwoonchoi/GeoStyle"
             code="https://github.com/changwoonchoi/GeoStyle"
             slides="none"
           >

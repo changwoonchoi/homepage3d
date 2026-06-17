@@ -38,7 +38,7 @@ const Publications = () => (
             journal="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026"
             project_page="https://changwoonchoi.github.io/GeoStyle/"
             author=<p><b>Changwoon Choi*</b>, Hyunsoo Lee*, Cl&eacute;ment Jambon, Yael Vinker, Young Min Kim<br/><i>(*Equally contributed)</i></p>
-            paper="https://arxiv.org/abs/2604.07795"
+            paper="https://openaccess.thecvf.com/content/CVPR2026/papers/Choi_Image-Guided_Geometric_Stylization_of_3D_Meshes_CVPR_2026_paper.pdf"
             video="https://github.com/changwoonchoi/GeoStyle"
             code="https://github.com/changwoonchoi/GeoStyle"
             slides="none"

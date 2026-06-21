@@ -1,7 +1,66 @@
+import { useState, useRef, useEffect } from 'react'
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, Link, LinkBox, LinkOverlay, Grid } from '@chakra-ui/react'
+import { Box, Text, Link, LinkBox, LinkOverlay, Grid, Skeleton } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+
+// Only fetches the (often large, animated) thumbnail once it scrolls near the
+// viewport. A skeleton placeholder reserves the image's aspect ratio so there
+// is no layout shift when the real image swaps in.
+export const LazyThumbnail = ({ thumbnail, title }) => {
+  const ref = useRef(null)
+  const [inView, setInView] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+  const aspectRatio =
+    thumbnail?.width && thumbnail?.height
+      ? `${thumbnail.width} / ${thumbnail.height}`
+      : '1 / 1'
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          setInView(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: '300px 0px' }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <Box ref={ref} position="relative" w="100%" sx={{ aspectRatio }}>
+      {!loaded && (
+        <Skeleton
+          position="absolute"
+          inset="0"
+          w="100%"
+          h="100%"
+          borderRadius="12px"
+        />
+      )}
+      {inView && (
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          onLoadingComplete={() => setLoaded(true)}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            opacity: loaded ? 1 : 0,
+            transition: 'opacity 0.3s ease-in-out'
+          }}
+        />
+      )}
+    </Box>
+  )
+}
 
 
 
@@ -93,11 +152,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
 export const PubGridItem = ({ title, thumbnail, journal, author, project_page, paper, video, code }) => (
   <Grid templateColumns={{ sm: '1fr', md: '200px 1fr' }} gap={6} alignItems="center">
     <Box w="100%" textAlign="center">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-      />
+      <LazyThumbnail thumbnail={thumbnail} title={title} />
     </Box>
     <Box w="100%" textAlign="left">
       <Text mt={2} fontSize={20}>
@@ -132,11 +187,7 @@ export const PubGridItem = ({ title, thumbnail, journal, author, project_page, p
 export const PubGridItemLink = ({ id, title, thumbnail, journal, author, project_page, paper, video, code }) => (
   <Grid templateColumns={{ sm: '1fr', md: '200px 1fr' }} gap={6} alignItems="center">
     <Box w="100%" textAlign="center">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-      />
+      <LazyThumbnail thumbnail={thumbnail} title={title} />
     </Box>
     <Box w="100%" textAlign="left">
       <Text mt={2} fontSize={20}>

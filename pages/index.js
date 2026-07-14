@@ -345,7 +345,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>Reviewer</BioYear>
-          SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, TOG, TVCG, CGF, CVPR, ICCV, ECCV, 3DV, WACV, ACCV, NeurIPS
+          SIGGRAPH, SIGGRAPH Asia, Pacific Graphics, TOG, TVCG, CGF, CVPR, ICCV, ECCV, 3DV, WACV, ACCV, BMVC, NeurIPS
         </BioSection>
       </Section>
       <LogoBanner />

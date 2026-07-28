@@ -122,6 +122,14 @@ const Home = () => {
           News
         </Heading>
         <BioSection>
+          <BioYear>2026.08</BioYear>
+          I&apos;m attending KCCV. See you at Busan!
+        </BioSection>
+        <BioSection>
+          <BioYear>2026.07</BioYear>
+          I&apos;m attending KCGS. See you at Yeosu!
+        </BioSection>
+        <BioSection>
           <BioYear>2026.05</BioYear>
           Selected as an <Link as={NextLink} href="https://x.com/CVPR/status/2056432742208876945/photo/2" passHref scroll={false} target="_blank">outstanding reviewer</Link> for CVPR 2026!
         </BioSection>

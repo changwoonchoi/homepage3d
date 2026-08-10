@@ -16,7 +16,7 @@ import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
 import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
-// import placeholder from '../public/images/publications/soon.png'
+import placeholder from '../public/images/publications/soon.png'
 import thumbHCP from '../public/images/publications/hcp_compressed.gif'
 import thumbProbeOptim from '../public/images/publications/probe_optim.gif'
 import thumbGeoStyle from '../public/images/publications/geostyle_teaser.png'
@@ -32,6 +32,22 @@ const Publications = () => (
       <SimpleGrid columns={{sm:1}} gap={6}>
         <Section>
           <PubGridItem
+            id="event_4d"
+            title="Continuous-time 4D Reconstruction via Event-guided Latent Feature Interpolation"
+            thumbnail={placeholder}
+            journal="British Machine Vision Conference (BMVC), 2026"
+            project_page="none"
+            author=<p>Gwangtak Bae, Seunggu Kang, Junho Kim, Eun Sun Lee, <b>Changwoon Choi</b>, Young Min Kim</p>
+            paper="none"
+            video="none"
+            code="none"
+            slides="none"
+          >
+          </PubGridItem>
+        </Section>
+
+        <Section>
+          <PubGridItem
             id="geostyle"
             title="Image-Guided Geometric Stylization of 3D Meshes"
             thumbnail={thumbGeoStyle}
@@ -45,6 +61,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItem
             id="probe_optim"
@@ -60,6 +77,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItem
             id="excellgen"
@@ -75,6 +93,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItem
             id="HCP"
@@ -90,6 +109,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItem
             id="Liv3Stroke"
@@ -105,6 +125,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItem
             id="I2SLAM"
@@ -120,6 +141,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItem
             id="3Doodle"
@@ -134,6 +156,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItem
             title="Investigating Chiral Morphogenesis of Gold Using Generative Cellular Automata"
@@ -147,6 +170,7 @@ const Publications = () => (
           >
           </PubGridItem>
         </Section>
+
         <Section>
           <PubGridItemLink
             id="IBL-NeRF"

@@ -16,11 +16,12 @@ import thumbmaterialGCA from '../public/images/publications/material_gca.jpg'
 import thumb3Doodle from '../public/images/publications/3doodle.gif'
 import thumbI2SLAM from '../public/images/publications/i2slam.gif'
 import thumbLiv3Stroke from '../public/images/publications/liv3stroke_cropped.gif'
-import placeholder from '../public/images/publications/soon.png'
 import thumbHCP from '../public/images/publications/hcp_compressed.gif'
 import thumbProbeOptim from '../public/images/publications/probe_optim.gif'
 import thumbGeoStyle from '../public/images/publications/geostyle_teaser.png'
 import thumbExCellGen from '../public/images/publications/excellgen.gif'
+import thumbEvent4D from '../public/images/publications/4D_Recon.png'
+// import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -34,7 +35,7 @@ const Publications = () => (
           <PubGridItem
             id="event_4d"
             title="Continuous-time 4D Reconstruction via Event-guided Latent Feature Interpolation"
-            thumbnail={placeholder}
+            thumbnail={thumbEvent4D}
             journal="British Machine Vision Conference (BMVC), 2026"
             project_page="none"
             author=<p>Gwangtak Bae, Seunggu Kang, Junho Kim, Eun Sun Lee, <b>Changwoon Choi</b>, Young Min Kim</p>

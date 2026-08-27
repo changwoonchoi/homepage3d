@@ -123,6 +123,10 @@ const Home = () => {
         </Heading>
         <BioSection>
           <BioYear>2026.08</BioYear>
+          Our work on continuous-time dynamic 3D reconstruction with event streams has been accepted to BMVC!
+        </BioSection>
+        <BioSection>
+          <BioYear>2026.08</BioYear>
           I&apos;m attending KCCV. See you at Busan!
         </BioSection>
         <BioSection>

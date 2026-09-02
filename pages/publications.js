@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { PubGridItem, PubGridItemLink } from '../components/grid-item'
+import { SketchUnderline } from '../components/sketch'
 
 import thumbGCA from '../public/images/publications/gca.gif'
 import thumbcGCA from '../public/images/publications/cgca.gif'
@@ -27,7 +28,7 @@ const Publications = () => (
   <Layout title="Publications">
     <Container maxW="100%">
       <Heading as="h3" fontSize={20} mb={4}>
-        Publications
+        <SketchUnderline>Publications</SketchUnderline>
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
@@ -130,7 +131,7 @@ const Publications = () => (
         <Section>
           <PubGridItem
             id="I2SLAM"
-            title=<p><i>I<sup>2</sup></i>-SLAM: Inverting Imaging Process for Robust Photorealistic Dense SLAM</p>
+            title={<><i>I<sup>2</sup></i>-SLAM: Inverting Imaging Process for Robust Photorealistic Dense SLAM</>}
             thumbnail={thumbI2SLAM}
             journal={"European Conference Computer Vision (ECCV), 2024\nAlso presented at the 1st Dense Neural SLAM Workshop (NeuSLAM) in ECCV 2024"}
             project_page="https://changwoonchoi.github.io/i2slam/"

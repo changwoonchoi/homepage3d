@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "engines": {
-     "node": "22.x"
+    "node": "22.x"
   },
   "keywords": [],
   "author": "Changwoon Choi",
@@ -21,6 +21,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@vercel/analytics": "^1.2.2",
+    "drawably": "^0.3.10",
     "framer-motion": "^8.4.0",
     "next": "^13.1.1",
     "react": "^18.2.0",

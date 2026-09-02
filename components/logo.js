@@ -23,7 +23,7 @@ const LogoBox = styled.span`
 
 const Logo = () => {
   return (
-    (<Link href="/" scroll={false}>
+    (<Link href="/" scroll={false} style={{ display: 'inline-flex' }}>
 
       <LogoBox>
         <IMacIcon />

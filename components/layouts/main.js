@@ -5,6 +5,7 @@ import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 import SceneLoader from '../load_scene'
 import { Analytics } from '@vercel/analytics/react'
+import { SketchLinkUnderlines } from '../sketch'
 
 const Scene = dynamic(() => import('../scene'), {
   ssr: false,
@@ -30,6 +31,7 @@ const Main = ({ children, router }) => {
       </Head>
 
       <NavBar path={router.asPath} />
+      <SketchLinkUnderlines />
 
       <Container maxW={router.asPath === '/publications' ? '110ch' : '110ch'} pt={14}>
       <Scene />

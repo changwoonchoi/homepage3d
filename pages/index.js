@@ -6,13 +6,13 @@ import {
   Heading,
   Box,
   // SimpleGrid,
-  Button,
   List,
   ListItem,
   chakra,
   Collapse,
+  useColorModeValue,
 } from '@chakra-ui/react'
-import { ChevronRightIcon, ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -22,6 +22,7 @@ import { IoLogoGithub, IoLogoLinkedin, IoMailUnread, IoDocumentAttach, IoSchool 
 import Image from 'next/image'
 // import Script from 'next/script'
 import LogoBanner from '../components/logobanner'
+import { SketchHeading, SketchHighlight, SketchButton, SketchUnderline, SketchPhoto } from '../components/sketch'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -30,6 +31,8 @@ const ProfileImage = chakra(Image, {
 const Home = () => {
   const [showOldNews, setShowOldNews] = useState(false);
   const [showMap, setShowMap] = useState(false);
+  // plain 'darkred' all but vanishes against the dark canvas
+  const accentInk = useColorModeValue('#8f2d2d', '#e08a8a');
   return (
   <Layout>
     <Container>
@@ -47,33 +50,21 @@ const Home = () => {
           ml={{ md: 6 }}
           textAlign="center"
         >
-          <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w="150px"
-            h="150px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
-          >
+          <SketchPhoto size={150}>
             <ProfileImage
               src="/images/changwoon.jpeg"
               alt="Profile image"
-              borderRadius="full"
               width="150"
               height="150"
             />
-          </Box>
+          </SketchPhoto>
         </Box>
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          About me
-        </Heading>
+        <SketchHeading>About me</SketchHeading>
         <Paragraph>
-          I&apos;m a <span style={{ color: 'darkred', fontStyle: 'italic'}}>final-year</span> PhD student in the ECE department at Seoul National University, advised by Prof.{' '}
+          I&apos;m a <span style={{ color: accentInk, fontStyle: 'italic'}}>final-year</span> PhD student in the ECE department at Seoul National University, advised by Prof.{' '}
           <Link as={NextLink} href="https://3d.snu.ac.kr" passHref scroll={false}>
             Young Min Kim
           </Link>
@@ -101,26 +92,30 @@ const Home = () => {
         </Paragraph>
         <Box height="0.3em"></Box>
         <Paragraph>
-          I am actively seeking both industry research roles or academic postdoc positions. Please feel free to reach out if you are interested in my work or potential collaborations!
+          <SketchHighlight>
+            I am actively seeking both industry research roles or academic postdoc positions.
+          </SketchHighlight>
+          {' '}Please feel free to reach out if you are interested in my work or potential collaborations!
         </Paragraph>
-        <Box align="center" my={4}>
-          <Button
+        <Box align="center" my={6}>
+          <SketchButton
             as={NextLink}
             href="/publications"
             scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+            strokeWidth={2.2}
+            fontSize={19}
+            px={6}
+            py={2}
+            sx={{ '--drawably-ink': 'var(--drawably-accent)' }}
           >
             Publications
-          </Button>
+          </SketchButton>
         </Box>
       </Section>
 
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          News
-        </Heading>
+        <SketchHeading>News</SketchHeading>
         <BioSection>
           <BioYear>2026.08</BioYear>
           Our work on continuous-time dynamic 3D reconstruction with event streams has been accepted to BMVC!
@@ -175,7 +170,7 @@ const Home = () => {
           onClick={() => setShowOldNews(!showOldNews)}
           display="flex"
         >
-          Old News
+          <SketchUnderline>Old News</SketchUnderline>
           {showOldNews ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </Heading>
         <Collapse in={showOldNews} animateOpacity>
@@ -239,72 +234,63 @@ const Home = () => {
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Info
-        </Heading>
-        <List>
+        <SketchHeading>Info</SketchHeading>
+        <List spacing={2}>
           <ListItem>
-            <Link href="mailto: hello@changwoon.info" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoMailUnread/>}
-              >
-                e-mail
-              </Button>
-            </Link>
+            <SketchButton
+              as="a"
+              href="mailto: hello@changwoon.info"
+              target="_blank"
+              leftIcon={<IoMailUnread/>}
+            >
+              e-mail
+            </SketchButton>
           </ListItem>
           <ListItem>
-            <Link href="CV_Changwoon.pdf" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoDocumentAttach/>}
-              >
-                Curriculum Vitae
-              </Button>
-            </Link>
+            <SketchButton
+              as="a"
+              href="CV_Changwoon.pdf"
+              target="_blank"
+              leftIcon={<IoDocumentAttach/>}
+            >
+              Curriculum Vitae
+            </SketchButton>
           </ListItem>
           <ListItem>
-            <Link href="https://github.com/changwoonchoi" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoGithub />}
-              >
-                GitHub
-              </Button>
-            </Link>
+            <SketchButton
+              as="a"
+              href="https://github.com/changwoonchoi"
+              target="_blank"
+              leftIcon={<IoLogoGithub />}
+            >
+              GitHub
+            </SketchButton>
           </ListItem>
           <ListItem>
-            <Link href="https://scholar.google.com/citations?user=DmPZo4QAAAAJ" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoSchool />}
-              >
-                Google Scholar
-              </Button>
-            </Link>
+            <SketchButton
+              as="a"
+              href="https://scholar.google.com/citations?user=DmPZo4QAAAAJ"
+              target="_blank"
+              leftIcon={<IoSchool />}
+            >
+              Google Scholar
+            </SketchButton>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/changwoon-choi-0bbb311a1/" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoLinkedin />}
-              >
-                LinkedIn
-              </Button>
-            </Link>
+            <SketchButton
+              as="a"
+              href="https://www.linkedin.com/in/changwoon-choi-0bbb311a1/"
+              target="_blank"
+              leftIcon={<IoLogoLinkedin />}
+            >
+              LinkedIn
+            </SketchButton>
           </ListItem>
         </List>
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Education
-        </Heading>
+        <SketchHeading>Education</SketchHeading>
         <BioSection>
           <BioYear>2020.09 - Present</BioYear>
           M.S./Ph.D., Seoul National University, ECE, advised by {' '}
@@ -323,9 +309,7 @@ const Home = () => {
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Experience
-        </Heading>
+        <SketchHeading>Experience</SketchHeading>
         <BioSection>
           <BioYear>2025.06 - 2025.12</BioYear>
           Research Scientist Intern, {' '}

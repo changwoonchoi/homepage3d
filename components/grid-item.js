@@ -3,6 +3,7 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import { Box, Text, Link, LinkBox, LinkOverlay, Grid, Skeleton } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import { SketchButton } from './sketch'
 
 // Only fetches the (often large, animated) thumbnail once it scrolls near the
 // viewport. A skeleton placeholder reserves the image's aspect ratio so there
@@ -149,37 +150,55 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
 //   </SimpleGrid>
 // )
 
+// The four resource links, as small sketch buttons. Anchors, not <button>s, so
+// a publication's links stay real links.
+const PubLinks = ({ project_page, paper, video, code }) => (
+  <Box mt={3} display="flex" flexWrap="wrap" gap={2}>
+    {[
+      { url: project_page, text: 'project page' },
+      { url: paper, text: 'paper' },
+      { url: video, text: 'video' },
+      { url: code, text: 'code' }
+    ]
+      .filter(link => link.url && link.url !== 'none')
+      .map(link => (
+        <SketchButton
+          key={link.text}
+          as="a"
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          fontSize={13}
+          px={3}
+          py={1}
+        >
+          {link.text}
+        </SketchButton>
+      ))}
+  </Box>
+)
+
 export const PubGridItem = ({ title, thumbnail, journal, author, project_page, paper, video, code }) => (
   <Grid templateColumns={{ sm: '1fr', md: '200px 1fr' }} gap={6} alignItems="center">
     <Box w="100%" textAlign="center">
       <LazyThumbnail thumbnail={thumbnail} title={title} />
     </Box>
     <Box w="100%" textAlign="left">
-      <Text mt={2} fontSize={20}>
+      <Text as="div" mt={2} fontSize={20}>
         {title}
       </Text>
-      <Text fontSize={14}>
+      <Text as="div" fontSize={14}>
         {author}
       </Text>
       <Text fontSize={14} color="grey" fontStyle="italic" whiteSpace="pre-line">
         {journal}
       </Text>
-      <Box mt={1}>
-        {[
-          { url: project_page, text: 'project page' },
-          { url: paper, text: 'paper' },
-          { url: video, text: 'video' },
-          { url: code, text: 'code' }
-        ]
-          .filter(link => link.url && link.url !== 'none')
-          .map((link, index, arr) => (
-            <Text key={index} fontSize={14} display="inline" whiteSpace="nowrap">
-              {index > 0 && ' '}
-              <Link as={NextLink} href={link.url} target="_blank">{link.text}</Link>
-              {index < arr.length - 1 && ' /'}
-            </Text>
-          ))}
-      </Box>
+      <PubLinks
+        project_page={project_page}
+        paper={paper}
+        video={video}
+        code={code}
+      />
     </Box>
   </Grid>
 )
@@ -190,34 +209,24 @@ export const PubGridItemLink = ({ id, title, thumbnail, journal, author, project
       <LazyThumbnail thumbnail={thumbnail} title={title} />
     </Box>
     <Box w="100%" textAlign="left">
-      <Text mt={2} fontSize={20}>
+      <Text as="div" mt={2} fontSize={20}>
         {' '}
         <Link as={NextLink} href={`/publications/${id}`} variants="pub_title">
           {title}
         </Link>
       </Text>
-      <Text fontSize={14}>
+      <Text as="div" fontSize={14}>
         {author}
       </Text>
       <Text fontSize={14} color="grey" fontStyle="italic" whiteSpace="pre-line">
         {journal}
       </Text>
-      <Box mt={1}>
-        {[
-          { url: project_page, text: 'project page' },
-          { url: paper, text: 'paper' },
-          { url: video, text: 'video' },
-          { url: code, text: 'code' }
-        ]
-          .filter(link => link.url && link.url !== 'none')
-          .map((link, index, arr) => (
-            <Text key={index} fontSize={14} display="inline" whiteSpace="nowrap">
-              {index > 0 && ' '}
-              <Link as={NextLink} href={link.url} target="_blank">{link.text}</Link>
-              {index < arr.length - 1 && ' /'}
-            </Text>
-          ))}
-      </Box>
+      <PubLinks
+        project_page={project_page}
+        paper={paper}
+        video={video}
+        code={code}
+      />
     </Box>
   </Grid>
 )

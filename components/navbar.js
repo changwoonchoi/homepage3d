@@ -17,23 +17,25 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import { SketchHighlight } from './sketch'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const linkColor = useColorModeValue('gray.800', 'whiteAlpha.900')
   return (
     <Link
       as={NextLink}
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
+      color={linkColor}
       target={target}
       {...props}
     >
-      {children}
+      {/* the active tab is marked with the same marker wash as the About me
+          line, rather than a solid teal block */}
+      {active ? <SketchHighlight>{children}</SketchHighlight> : children}
     </Link>
   )
 }
@@ -64,7 +66,16 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          {/* flex, not the default block: as a block the h1's 36px line box
+              baseline-aligns the inline-flex logo and parks it ~5px above the
+              nav links, which are centred in their own 40px boxes */}
+          <Heading
+            as="h1"
+            size="lg"
+            letterSpacing={'tighter'}
+            display="flex"
+            alignItems="center"
+          >
             <Logo />
           </Heading>
         </Flex>

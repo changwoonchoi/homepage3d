@@ -117,6 +117,10 @@ const Home = () => {
       <Section delay={0.2}>
         <SketchHeading>News</SketchHeading>
         <BioSection>
+          <BioYear>2026.09</BioYear>
+          Check out our new <Link as ={NextLink} href="https://mkjjang3598.github.io/Scene-Retargeting/" passHref scroll={false} target="_blank">work</Link>&nbsp;on indoor scene retargeting!
+        </BioSection>
+        <BioSection>
           <BioYear>2026.08</BioYear>
           Our work on continuous-time dynamic 3D reconstruction with event streams has been accepted to BMVC!
         </BioSection>

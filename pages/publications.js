@@ -22,7 +22,7 @@ import thumbProbeOptim from '../public/images/publications/probe_optim.gif'
 import thumbGeoStyle from '../public/images/publications/geostyle_teaser.png'
 import thumbExCellGen from '../public/images/publications/excellgen.gif'
 import thumbEvent4D from '../public/images/publications/4D_Recon.png'
-// import placeholder from '../public/images/publications/soon.png'
+import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -32,6 +32,22 @@ const Publications = () => (
       </Heading>
 
       <SimpleGrid columns={{sm:1}} gap={6}>
+        <Section>
+          <PubGridItem
+            id="scene_retargeting"
+            title="Scene Retargeting: Learning Object Placement with Analogical Transfer"
+            thumbnail={placeholder}
+            journal="arXiv preprint, 2026"
+            project_page="https://mkjjang3598.github.io/Scene-Retargeting/"
+            author=<p>Minkwan Kim, Junho Kim, Seungmin Lee, <b>Changwoon Choi</b>, Young Min Kim</p>
+            paper="https://arxiv.org/abs/2609.36801"
+            video="none"
+            code="none"
+            slides="none"
+          >
+          </PubGridItem>
+        </Section>
+
         <Section>
           <PubGridItem
             id="event_4d"
@@ -69,8 +85,7 @@ const Publications = () => (
             id="probe_optim"
             title="Geometry-Aware Scene Configurations for Novel View Synthesis"
             thumbnail={thumbProbeOptim}
-            journal={"IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026\nAlso presented at IEEE VR 2026 (poster)"}
-            project_page="https://mkjjang3598.github.io/Geo-Scene-Config/"
+            journal={"IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026\nAlso presented at Pacific Graphics 2026 and IEEE VR 2026 (poster)"} project_page="https://mkjjang3598.github.io/Geo-Scene-Config/"
             author=<p>Minkwan Kim, <b>Changwoon Choi</b>, Young Min Kim</p>
             paper="https://ieeexplore.ieee.org/document/11506399"
             video="https://www.youtube.com/watch?v=U5001zsHz6w"

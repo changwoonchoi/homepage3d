@@ -33,6 +33,20 @@ $PROJECT_ROOT
 └── public
 ```
 
+## CV
+
+`public/CV_Changwoon.pdf` is updated automatically from my CV repository ([changwoonchoi/CV](https://github.com/changwoonchoi/CV), private):
+
+```
+push to the CV repo
+  → GitHub Action builds the PDF
+  → commits it here as public/CV_Changwoon.pdf ("update cv: ...")
+  → Vercel redeploys changwoon.info
+```
+
+- Don't edit `public/CV_Changwoon.pdf` by hand; the next CV update overwrites it.
+- The Action pushes here with a deploy key (*Settings → Deploy keys → CV auto-publish*), so run `git pull` before working locally.
+
 ## License
 
 MIT License.

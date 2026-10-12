@@ -22,7 +22,8 @@ import thumbProbeOptim from '../public/images/publications/probe_optim.gif'
 import thumbGeoStyle from '../public/images/publications/geostyle_teaser.png'
 import thumbExCellGen from '../public/images/publications/excellgen.gif'
 import thumbEvent4D from '../public/images/publications/4D_Recon.png'
-import placeholder from '../public/images/publications/soon.png'
+import thumbSceneRetargeting from '../public/images/publications/scene_retargeting.gif'
+// import placeholder from '../public/images/publications/soon.png'
 
 const Publications = () => (
   <Layout title="Publications">
@@ -36,7 +37,7 @@ const Publications = () => (
           <PubGridItem
             id="scene_retargeting"
             title="Scene Retargeting: Learning Object Placement with Analogical Transfer"
-            thumbnail={placeholder}
+            thumbnail={thumbSceneRetargeting}
             journal="arXiv preprint, 2026"
             project_page="https://mkjjang3598.github.io/Scene-Retargeting/"
             author=<p>Minkwan Kim, Junho Kim, Seungmin Lee, <b>Changwoon Choi</b>, Young Min Kim</p>

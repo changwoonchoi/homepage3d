@@ -134,7 +134,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>2026.05</BioYear>
-          Selected as an <Link as={NextLink} href="https://x.com/CVPR/status/2056432742208876945/photo/2" passHref scroll={false} target="_blank">outstanding reviewer</Link> for CVPR 2026!
+          Selected as an <Link as={NextLink} href="./miscs/cvpr26_outstanding_reviewer.pdf" passHref scroll={false} target="_blank">outstanding reviewer</Link> for CVPR 2026!
         </BioSection>
 
         <BioSection>

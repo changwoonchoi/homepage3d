@@ -22,7 +22,8 @@ import { IoLogoGithub, IoLogoLinkedin, IoMailUnread, IoDocumentAttach, IoSchool 
 import Image from 'next/image'
 // import Script from 'next/script'
 import LogoBanner from '../components/logobanner'
-import { SketchHeading, SketchHighlight, SketchButton, SketchUnderline, SketchPhoto } from '../components/sketch'
+// import { SketchHeading, SketchHighlight, SketchButton, SketchUnderline, SketchPhoto } from '../components/sketch'
+import { SketchHeading, SketchButton, SketchUnderline, SketchPhoto } from '../components/sketch'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)

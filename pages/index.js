@@ -92,10 +92,7 @@ const Home = () => {
         </Paragraph>
         <Box height="0.3em"></Box>
         <Paragraph>
-          <SketchHighlight>
-            I am actively seeking both industry research roles or academic postdoc positions.
-          </SketchHighlight>
-          {' '}Please feel free to reach out if you are interested in my work or potential collaborations!
+          Please feel free to reach out if you are interested in my work or potential collaborations!
         </Paragraph>
         <Box align="center" my={6}>
           <SketchButton

@@ -115,6 +115,11 @@ const Home = () => {
       <Section delay={0.2}>
         <SketchHeading>News</SketchHeading>
         <BioSection>
+          <BioYear>2026.11</BioYear>
+          Selected as a <Link as={NextLink} href="https://research.google/programs-and-events/phd-fellowship/recipients/?filtertab=2026" passHref scroll={false} target="_blank">Google PhD Fellow</Link> in Machine Perception!
+          (<Link as={NextLink} href="https://eng.snu.ac.kr/communication/promotion/news?md=v&bbsidx=8529" passHref scroll={false} target="_blank">press</Link>)
+        </BioSection>
+        <BioSection>
           <BioYear>2026.09</BioYear>
           Check out our new <Link as ={NextLink} href="https://mkjjang3598.github.io/Scene-Retargeting/" passHref scroll={false} target="_blank">work</Link>&nbsp;on indoor scene retargeting!
         </BioSection>

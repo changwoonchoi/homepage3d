@@ -4,9 +4,9 @@ import {
   Heading,
   Text,
   Container,
-  Divider,
-  Button
+  Divider
 } from '@chakra-ui/react'
+import { SketchButton } from '../components/sketch'
 
 const NotFound = () => {
   return (
@@ -15,9 +15,18 @@ const NotFound = () => {
       <Text>The page you&apos;re looking for was not found.</Text>
       <Divider my={6} />
       <Box my={6} align="center">
-        <Button as={NextLink} href="/" colorScheme="teal">
+        <SketchButton
+          as={NextLink}
+          href="/"
+          scroll={false}
+          strokeWidth={2.2}
+          fontSize={19}
+          px={6}
+          py={2}
+          sx={{ '--drawably-ink': 'var(--drawably-accent)' }}
+        >
           Return to home
-        </Button>
+        </SketchButton>
       </Box>
     </Container>
   )
